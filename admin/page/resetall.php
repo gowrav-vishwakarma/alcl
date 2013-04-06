@@ -73,10 +73,10 @@ class page_resetall extends Page {
 
         $s = $this->add('Model_Staff');
         $s['pos_id'] = 0;
-        $s['username'] = 'ffmadmin';
-        $s['password'] = 'ffmadmin';
+        $s['username'] = 'alcladmin';
+        $s['password'] = 'alcladmin';
         $s['AccessLevel'] = 1000;
-        $s['name'] = "ffmadmin";
+        $s['name'] = "alcladmin";
         $s->save();
 
         $this->query("UPDATE jos_xxstaff SET pos_id=0 WHERE pos_id is null");
@@ -136,14 +136,19 @@ class page_resetall extends Page {
             "In Direct Income" => 13,
             "Purchase Account" => 14,
             /* 25 */"Sales Account" => 15, /* 25 */
-            "Distributors" => 3,
+            "Distributors" => array("ParentGroupID" => 8, "ParentGroupHeadID" => 3),
             "Loans (Liability)" => 2,
         );
 
         foreach ($groups_arr as $grp => $head) {
             $ng = $this->add('Model_GroupsAll');
             $ng['name'] = $grp;
-            $ng['head_id'] = $head;
+            if(!is_array($head))
+                $ng['head_id'] = $head;
+            else{
+                $ng['head_id'] = $head['ParentGroupHeadID'];
+                $ng['group_id'] = $head['ParentGroupID'];
+            }
             $ng->saveAndUnload();
         }
 
@@ -170,23 +175,24 @@ class page_resetall extends Page {
             /* 7 */"TDS" => 9, /* Under Duties and Taxes */
             /* 8 */"Commission" => 20, /* Under Direct Expense */
             /* 9 */"Service Tax Payable" => 9, /* Under Duties and Taxes */
-            /* 10 */"Holiday Voucher Sales" => 25, /* Sales Account */
-            /* 11 */"P and C Paint Shirt Sales" => 25, /* Sales Account */
-            /* 12 */"My Choice Paint Shirt Sales" => 25, /* Sales Account */
-            /* 13 */"BSL Paint Shirt Sales" => 25, /* Sales Account */
-            /* 14 */"Easy Pack Sales" => 25, /* Sales Account */
-            /* 15 */"High Choice Paint Shirt Sales" => 25, /* Sales Account */
-            /* 16 */"Diamond Paint Shirt Sales" => 25, /* Sales Account */
-            /* 17 */"Electro Paint Shirt Sales" => 25, /* Sales Account */
-            /* 18 */"Executive Suit Length Sales" => 25, /* Sales Account */
-            /* 19 */"Family Pack Paint Shirt Sales" => 25, /* Sales Account */
-            /* 20 */"Economy Paint Shirt Sales" => 25, /* Sales Account */
-            /* 21 */"Executive Paint Shirt Sales" => 25, /* Sales Account */
             /* 22 */"XYZ Bank Account" => 19, /* Bank Account */
             /* 23 */"Service Charge" => 23, /* In Direct Income */
             /* 24 */"Other Deductions" => 23, /* In Direct Income */
             /* 25 */"First Payout Deduction" => 27, /* Loans (Liability) */
             /* 26 */"Upgradation Deduction" => 27 /* Loans (Liability) */
+            
+            // /* 10 */"Holiday Voucher Sales" => 25, /* Sales Account */
+            // /* 11 */"P and C Paint Shirt Sales" => 25, /* Sales Account */
+            // /* 12 */"My Choice Paint Shirt Sales" => 25, /* Sales Account */
+            // /* 13 */"BSL Paint Shirt Sales" => 25, /* Sales Account */
+            // /* 14 */"Easy Pack Sales" => 25, /* Sales Account */
+            // /* 15 */"High Choice Paint Shirt Sales" => 25, /* Sales Account */
+            //  16 "Diamond Paint Shirt Sales" => 25, /* Sales Account */
+            // /* 17 */"Electro Paint Shirt Sales" => 25, /* Sales Account */
+            // /* 18 */"Executive Suit Length Sales" => 25, /* Sales Account */
+            // /* 19 */"Family Pack Paint Shirt Sales" => 25, /* Sales Account */
+            // /* 20 */"Economy Paint Shirt Sales" => 25, /* Sales Account */
+            // /* 21 */"Executive Paint Shirt Sales" => 25, /* Sales Account */
         );
 
         // @TODO@ -- Create kitledgers in default mode
@@ -205,143 +211,143 @@ class page_resetall extends Page {
         // $this->query("DELETE FROM jos_xpinmaster WHERE Used=0;");
         // Create Kit Ledgers
 
-        $kitledgers = array(
-            /* Kit ID Easy kit */1 => array(
-                /* Ledger ID */10 => /* Amount */ 691.45,
-                9 => 8.55,
-                14 => 400
-            ),
-            /* Kit ID FFM Pack yfoc 2=>array(
-              10 =>691.45,
-              9 => 8.55,
-              11=> 400
-              ), */
-            /* Kit ID Kit no 3 */11 => array(
-                /* Ledger ID */10 => /* Amount */ 691.45,
-                9 => 8.55,
-                20 => 1100
-            ),
-            /* Kit ID kit no 4 */12 => array(
-                /* Ledger ID */10 => /* Amount */ 691.45,
-                9 => 8.55,
-                12 => 1300
-            ),
-            /* Kit ID Kit NO 2 */13 => array(
-                /* Ledger ID */10 => /* Amount */ 691.45,
-                9 => 8.55,
-                19 => 900
-            ),
-            /* Kit ID Kit No 6 */14 => array(
-                /* Ledger ID */10 => /* Amount */ 691.45,
-                9 => 8.55,
-                17 => 234
-            ),
-            /* Kit ID Kit nO 7 */15 => array(
-                /* Ledger ID */10 => /* Amount */ 691.45,
-                9 => 8.55,
-                21 => 5300
-            ),
-            /* Kit ID Kit No 8 */16 => array(
-                /* Ledger ID */10 => /* Amount */ 691.45,
-                9 => 8.55,
-                15 => 6300
-            ),
-            /* Kit ID Kit No 9 */17 => array(
-                /* Ledger ID */10 => /* Amount */ 691.45,
-                9 => 8.55,
-                11 => 10800
-            ),
-            /* Kit ID kit no 5 */18 => array(
-                /* Ledger ID */10 => /* Amount */ 691.45,
-                9 => 8.55,
-                16 => 2800
-            ),
-            /* Kit ID Kit No 10 */19 => array(
-                /* Ledger ID */10 => /* Amount */ 691.45,
-                9 => 8.55,
-                11 => 14300
-            ),
-            /* Kit ID Kit No 1 ============= */20 => array(
-                /* Ledger ID */10 => /* Amount */ 691.45,
-                9 => 8.55,
-                11 => 800
-            ),
-            /* Kit ID Economy Pack */21 => array(
-                /* Ledger ID */10 => /* Amount */ 691.45,
-                9 => 8.55,
-                12 => 1300
-            ),
-            /* Kit ID Safety Pack */22 => array(
-                /* Ledger ID */10 => /* Amount */ 691.45,
-                9 => 8.55,
-                13 => 2300
-            ),
-            /* Kit ID Diamond Pack */23 => array(
-                /* Ledger ID */10 => /* Amount */ 691.45,
-                9 => 8.55,
-                16 => 2800
-            ),
-            /* Kit ID Electro Pack */24 => array(
-                /* Ledger ID */10 => /* Amount */ 691.45,
-                9 => 8.55,
-                21 => 3800
-            ),
-            /* Kit ID Combo Pack */25 => array(
-                /* Ledger ID */10 => /* Amount */ 691.45,
-                9 => 8.55,
-                21 => 5300
-            ),
-            /* Kit ID Secure Pack 1 */26 => array(
-                /* Ledger ID */10 => /* Amount */ 691.45,
-                9 => 8.55,
-                15 => 6300
-            ),
-            /* Kit ID Secure Pack 2 */27 => array(
-                /* Ledger ID */10 => /* Amount */ 691.45,
-                9 => 8.55,
-                11 => 9300
-            ),
-            /* Kit ID Secure Pack 3 */28 => array(
-                /* Ledger ID */10 => /* Amount */ 691.45,
-                9 => 8.55,
-                11 => 11300
-            ),
-            /* Kit ID Secure Pack 4 */29 => array(
-                /* Ledger ID */10 => /* Amount */ 691.45,
-                9 => 8.55,
-                11 => 14300
-            ),
-            /* Kit ID International Pack */30 => array(
-                /* Ledger ID */10 => /* Amount */ 691.45,
-                9 => 8.55,
-                11 => 24300
-            ),
-            /* Kit ID Family Pack 1 */31 => array(
-                /* Ledger ID */10 => /* Amount */ 691.45,
-                9 => 8.55,
-                19 => 900
-            ),
-            /* Kit ID Family Pack 2 */32 => array(
-                /* Ledger ID */10 => /* Amount */ 691.45,
-                9 => 8.55,
-                12 => 1300
-            ),
-            /* Kit ID Family Pack 3 */33 => array(
-                /* Ledger ID */10 => /* Amount */ 691.45,
-                9 => 8.55,
-                17 => 3300
-            ),
-        );
+        // $kitledgers = array(
+        //     /* Kit ID Easy kit */1 => array(
+        //         /* Ledger ID */10 => /* Amount */ 691.45,
+        //         9 => 8.55,
+        //         14 => 400
+        //     ),
+        //     /* Kit ID FFM Pack yfoc 2=>array(
+        //       10 =>691.45,
+        //       9 => 8.55,
+        //       11=> 400
+        //       ), */
+        //     /* Kit ID Kit no 3 */11 => array(
+        //         /* Ledger ID */10 => /* Amount */ 691.45,
+        //         9 => 8.55,
+        //         20 => 1100
+        //     ),
+        //     /* Kit ID kit no 4 */12 => array(
+        //         /* Ledger ID */10 => /* Amount */ 691.45,
+        //         9 => 8.55,
+        //         12 => 1300
+        //     ),
+        //     /* Kit ID Kit NO 2 */13 => array(
+        //         /* Ledger ID */10 => /* Amount */ 691.45,
+        //         9 => 8.55,
+        //         19 => 900
+        //     ),
+        //     /* Kit ID Kit No 6 */14 => array(
+        //         /* Ledger ID */10 => /* Amount */ 691.45,
+        //         9 => 8.55,
+        //         17 => 234
+        //     ),
+        //     /* Kit ID Kit nO 7 */15 => array(
+        //         /* Ledger ID */10 => /* Amount */ 691.45,
+        //         9 => 8.55,
+        //         21 => 5300
+        //     ),
+        //     /* Kit ID Kit No 8 */16 => array(
+        //         /* Ledger ID */10 => /* Amount */ 691.45,
+        //         9 => 8.55,
+        //         15 => 6300
+        //     ),
+        //     /* Kit ID Kit No 9 */17 => array(
+        //         /* Ledger ID */10 => /* Amount */ 691.45,
+        //         9 => 8.55,
+        //         11 => 10800
+        //     ),
+        //     /* Kit ID kit no 5 */18 => array(
+        //         /* Ledger ID */10 => /* Amount */ 691.45,
+        //         9 => 8.55,
+        //         16 => 2800
+        //     ),
+        //     /* Kit ID Kit No 10 */19 => array(
+        //         /* Ledger ID */10 => /* Amount */ 691.45,
+        //         9 => 8.55,
+        //         11 => 14300
+        //     ),
+        //     /* Kit ID Kit No 1 ============= */20 => array(
+        //         /* Ledger ID */10 => /* Amount */ 691.45,
+        //         9 => 8.55,
+        //         11 => 800
+        //     ),
+        //     /* Kit ID Economy Pack */21 => array(
+        //         /* Ledger ID */10 => /* Amount */ 691.45,
+        //         9 => 8.55,
+        //         12 => 1300
+        //     ),
+        //     /* Kit ID Safety Pack */22 => array(
+        //         /* Ledger ID */10 => /* Amount */ 691.45,
+        //         9 => 8.55,
+        //         13 => 2300
+        //     ),
+        //     /* Kit ID Diamond Pack */23 => array(
+        //         /* Ledger ID */10 => /* Amount */ 691.45,
+        //         9 => 8.55,
+        //         16 => 2800
+        //     ),
+        //     /* Kit ID Electro Pack */24 => array(
+        //         /* Ledger ID */10 => /* Amount */ 691.45,
+        //         9 => 8.55,
+        //         21 => 3800
+        //     ),
+        //     /* Kit ID Combo Pack */25 => array(
+        //         /* Ledger ID */10 => /* Amount */ 691.45,
+        //         9 => 8.55,
+        //         21 => 5300
+        //     ),
+        //     /* Kit ID Secure Pack 1 */26 => array(
+        //         /* Ledger ID */10 => /* Amount */ 691.45,
+        //         9 => 8.55,
+        //         15 => 6300
+        //     ),
+        //     /* Kit ID Secure Pack 2 */27 => array(
+        //         /* Ledger ID */10 => /* Amount */ 691.45,
+        //         9 => 8.55,
+        //         11 => 9300
+        //     ),
+        //     /* Kit ID Secure Pack 3 */28 => array(
+        //         /* Ledger ID */10 => /* Amount */ 691.45,
+        //         9 => 8.55,
+        //         11 => 11300
+        //     ),
+        //     /* Kit ID Secure Pack 4 */29 => array(
+        //         /* Ledger ID */10 => /* Amount */ 691.45,
+        //         9 => 8.55,
+        //         11 => 14300
+        //     ),
+        //     /* Kit ID International Pack */30 => array(
+        //         /* Ledger ID */10 => /* Amount */ 691.45,
+        //         9 => 8.55,
+        //         11 => 24300
+        //     ),
+        //     /* Kit ID Family Pack 1 */31 => array(
+        //         /* Ledger ID */10 => /* Amount */ 691.45,
+        //         9 => 8.55,
+        //         19 => 900
+        //     ),
+        //     /* Kit ID Family Pack 2 */32 => array(
+        //         /* Ledger ID */10 => /* Amount */ 691.45,
+        //         9 => 8.55,
+        //         12 => 1300
+        //     ),
+        //     /* Kit ID Family Pack 3 */33 => array(
+        //         /* Ledger ID */10 => /* Amount */ 691.45,
+        //         9 => 8.55,
+        //         17 => 3300
+        //     ),
+        // );
 
-        $k = $this->add('Model_KitLedgers');
-        foreach ($kitledgers as $kitid => $ledgers) {
-            foreach ($ledgers as $ledgerid => $amount) {
-                $k['kit_id'] = $kitid;
-                $k['ledger_id'] = $ledgerid;
-                $k['Amount'] = $amount;
-                $k->saveAndUnload();
-            }
-        }
+        // $k = $this->add('Model_KitLedgers');
+        // foreach ($kitledgers as $kitid => $ledgers) {
+        //     foreach ($ledgers as $ledgerid => $amount) {
+        //         $k['kit_id'] = $kitid;
+        //         $k['ledger_id'] = $ledgerid;
+        //         $k['Amount'] = $amount;
+        //         $k->saveAndUnload();
+        //     }
+        // }
 
         $this->page_oldPins();
         $this->add('Text')->set('Reset Done');
