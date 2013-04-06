@@ -1,0 +1,2269 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"text",
+				"text-align"
+			],
+			[
+				"temp",
+				"template"
+			],
+			[
+				"tem",
+				"template"
+			],
+			[
+				"Cu",
+				"CurrentBalanceCr"
+			],
+			[
+				"O",
+				"OpeningBalanceDr"
+			],
+			[
+				"premico",
+				"premiumCorrection"
+			],
+			[
+				"paidarr",
+				"paid_array"
+			],
+			[
+				"scheme",
+				"schemes_id"
+			],
+			[
+				"sch",
+				"schemes"
+			],
+			[
+				"last",
+				"last_i"
+			],
+			[
+				"font",
+				"font-size"
+			],
+			[
+				"new",
+				"new_query"
+			],
+			[
+				"next",
+				"nextDate"
+			],
+			[
+				"refere",
+				"referenceaccount_agent_member_Name"
+			],
+			[
+				"refe",
+				"referenceaccount"
+			],
+			[
+				"schem",
+				"schemes_id"
+			],
+			[
+				"pre",
+				"premium_amount_sum"
+			],
+			[
+				"prem",
+				"premium_due_sum"
+			],
+			[
+				"fd",
+				"fd_tra"
+			],
+			[
+				"tra",
+				"transaction_type_Transaction"
+			],
+			[
+				"ex",
+				"exp"
+			],
+			[
+				"voucher",
+				"voucher_no"
+			],
+			[
+				"con",
+				"contents"
+			],
+			[
+				"accou",
+				"AccountCr"
+			],
+			[
+				"Acc",
+				"AccountDr"
+			],
+			[
+				"Tra",
+				"TransactionCr"
+			],
+			[
+				"Accou",
+				"AccountDR"
+			],
+			[
+				"Transa",
+				"TransactionDr"
+			],
+			[
+				"branch",
+				"branch_id"
+			],
+			[
+				"Active",
+				"ActiveStatus"
+			],
+			[
+				"amount",
+				"amountCr"
+			],
+			[
+				"head",
+				"headerTemplate"
+			],
+			[
+				"hea",
+				"headerTemplate"
+			],
+			[
+				"opb",
+				"opb_val"
+			],
+			[
+				"strto",
+				"strtoupper"
+			],
+			[
+				"Account",
+				"AccountNumber"
+			],
+			[
+				"sche",
+				"scheme_Name"
+			],
+			[
+				"Ac",
+				"AccountNumber"
+			],
+			[
+				"Open",
+				"OpeningBalanceCr"
+			],
+			[
+				"Op",
+				"OpeningBalanceDr"
+			],
+			[
+				"amoun",
+				"amountCr"
+			],
+			[
+				"alert",
+				"alert_in_window_defined"
+			],
+			[
+				"for",
+				"forajax"
+			],
+			[
+				"Sc",
+				"SchemeName"
+			],
+			[
+				"Openin",
+				"OpeningBalanceDr"
+			],
+			[
+				"account",
+				"account_scheme_balancesheet_subtract_from"
+			],
+			[
+				"todate",
+				"todate"
+			],
+			[
+				"from",
+				"fromDate"
+			],
+			[
+				"url",
+				"urlencode"
+			],
+			[
+				"getPa",
+				"getPandLClosingValue"
+			],
+			[
+				"sub",
+				"subtract_from"
+			],
+			[
+				"subtr",
+				"subtract_from"
+			],
+			[
+				"amou",
+				"amountCr"
+			],
+			[
+				"group",
+				"group_by"
+			],
+			[
+				"date",
+				"dateOn"
+			],
+			[
+				"Ope",
+				"OpeningBalanceCr"
+			],
+			[
+				"OpenBa",
+				"OpeningBalanceDr"
+			],
+			[
+				"check",
+				"check_last_query"
+			],
+			[
+				"transaction_type",
+				"transaction_type_id"
+			],
+			[
+				"fater",
+				"FatherName"
+			],
+			[
+				"Dea",
+				"DealerName"
+			],
+			[
+				"inclde",
+				"include_related"
+			],
+			[
+				"include",
+				"include_related"
+			],
+			[
+				"created",
+				"created_at"
+			],
+			[
+				"pena",
+				"PenaltyDUE"
+			],
+			[
+				"Curren",
+				"CurrentBalanceCr"
+			],
+			[
+				"curre",
+				"currentDr"
+			],
+			[
+				"forclo",
+				"forCloseCharge"
+			],
+			[
+				"inter",
+				"interestGiven"
+			],
+			[
+				"loan",
+				"loanAmount"
+			],
+			[
+				"forcl",
+				"forCloseAmount"
+			],
+			[
+				"dealer",
+				"dealer_DealerName"
+			],
+			[
+				"dea",
+				"dealer_DealerName"
+			],
+			[
+				"Accoun",
+				"AccountNumber"
+			],
+			[
+				"vouc",
+				"voucher_no"
+			],
+			[
+				"traty",
+				"transaction_type_id"
+			],
+			[
+				"VOU",
+				"voucher_no"
+			],
+			[
+				"vou",
+				"voucher_no"
+			],
+			[
+				"incl",
+				"include_related"
+			],
+			[
+				"submi",
+				"submited_in_accounts"
+			],
+			[
+				"CR",
+				"CRs"
+			],
+			[
+				"Branch",
+				"BranchId"
+			],
+			[
+				"LoanIns",
+				"LoanInsurranceDate"
+			],
+			[
+				"ca",
+				"cancel"
+			],
+			[
+				"table",
+				"table_id"
+			],
+			[
+				"tab",
+				"table_id"
+			],
+			[
+				"chec",
+				"check_last_query"
+			],
+			[
+				"Agen",
+				"Agents_Id"
+			],
+			[
+				"repor",
+				"report_2_cont"
+			],
+			[
+				"array_key",
+				"array_key_exists"
+			],
+			[
+				"report",
+				"report_cont"
+			],
+			[
+				"rate",
+				"rate_field"
+			],
+			[
+				"roll",
+				"roll_no"
+			],
+			[
+				"clas",
+				"class_field"
+			],
+			[
+				"allow",
+				"allow_add"
+			],
+			[
+				"user",
+				"user_acl"
+			],
+			[
+				"page_",
+				"page_name"
+			],
+			[
+				"item_",
+				"item_m"
+			],
+			[
+				"backgrou",
+				"background-color"
+			],
+			[
+				"clone",
+				"clone_map"
+			],
+			[
+				"fiel",
+				"field_other_then_id"
+			],
+			[
+				"right",
+				"rightField"
+			],
+			[
+				"isc",
+				"iscurrent"
+			],
+			[
+				"filest",
+				"filestore_file"
+			],
+			[
+				"Dis",
+				"disease"
+			],
+			[
+				"staff",
+				"staff_field"
+			],
+			[
+				"filter",
+				"filter_field"
+			],
+			[
+				"hos",
+				"hostel_master_id"
+			],
+			[
+				"examp",
+				"examClassMap"
+			],
+			[
+				"main",
+				"maintainSession"
+			],
+			[
+				"mappin",
+				"mappingModel"
+			],
+			[
+				"left",
+				"leftModel"
+			],
+			[
+				"distributor",
+				"distributor_id"
+			],
+			[
+				"distr",
+				"Distributor"
+			],
+			[
+				"head_",
+				"head_array"
+			],
+			[
+				"closins",
+				"clossings"
+			],
+			[
+				"dist",
+				"distscount"
+			],
+			[
+				"strre",
+				"str_replace"
+			],
+			[
+				"Kit",
+				"KitLedgers"
+			],
+			[
+				"save",
+				"saveAndUnload"
+			],
+			[
+				"det",
+				"details_fk"
+			],
+			[
+				"exe",
+				"execute"
+			],
+			[
+				"sponsor",
+				"sponsor_id"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "pos/templates/default/shared.html",
+			"settings":
+			{
+				"buffer_size": 2292,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "pos/atk4/lib/jQuery.php",
+			"settings":
+			{
+				"buffer_size": 4858,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "pos/config-default.php",
+			"settings":
+			{
+				"buffer_size": 516,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "pos/page/pins/sales.php",
+			"settings":
+			{
+				"buffer_size": 474,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "pos/page/pins/distributorsales.php",
+			"settings":
+			{
+				"buffer_size": 969,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 369.0,
+		"selected_items":
+		[
+			[
+				"linte",
+				"SublimeLinter: Show Error List"
+			],
+			[
+				"codein",
+				"SublimeCodeIntel: Disable Live Autocompletion for Current Language"
+			],
+			[
+				"tidy",
+				"Tidy PHP"
+			],
+			[
+				"Package Control: lis",
+				"Package Control: List Packages"
+			],
+			[
+				"Package Control: ",
+				"Package Control: Install Package"
+			],
+			[
+				"Snippet: ",
+				"Snippet: <?php else: ?>"
+			],
+			[
+				"gitdi",
+				"Git: Diff Current File"
+			],
+			[
+				"gitdiff",
+				"Git: Diff Current File"
+			],
+			[
+				"git diff",
+				"Git: Open Modified Files"
+			],
+			[
+				"git ",
+				"Git: Diff Staged"
+			],
+			[
+				"git log",
+				"Git: Log Current File"
+			],
+			[
+				"git",
+				"Git: Log Current File"
+			],
+			[
+				"gitlog",
+				"Git: Log Current File"
+			],
+			[
+				"pack",
+				"Package Control: Install Package"
+			],
+			[
+				"php",
+				"Format: Php"
+			],
+			[
+				"packa",
+				"Package Control: List Packages"
+			],
+			[
+				"packli",
+				"Package Control: List Packages"
+			],
+			[
+				"tid",
+				"Tidy PHP"
+			],
+			[
+				"phpti",
+				"Snippet: Throw Exception"
+			],
+			[
+				"pacin",
+				"Package Control: Install Package"
+			],
+			[
+				"pac",
+				"Package Control: Install Package"
+			],
+			[
+				"diff",
+				"Set Syntax: Diff"
+			],
+			[
+				"page",
+				"Snippet: page"
+			],
+			[
+				"css",
+				"Snippet: Class"
+			]
+		],
+		"width": 593.0
+	},
+	"console":
+	{
+		"height": 139.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/var/www/alcl/admin/lib/Model/PinTransaction.php",
+		"/var/www/alcl/admin/page/pin/generate.php",
+		"/var/www/alcl/admin/lib/Model/Distributor.php",
+		"/var/www/alcl/admin/lib/Model/PinTransactionTo.php",
+		"/var/www/alcl/admin/lib/Model/PinTransactionFrom.php",
+		"/var/www/alcl/admin/lib/Model/Pin.php",
+		"/var/www/alcl/admin/lib/Model/Pos.php",
+		"/var/www/alcl/admin/page/pos.php",
+		"/var/www/alcl/admin/page/kit/dashboard.php",
+		"/var/www/alcl/admin/lib/Model/KitTransfers.php",
+		"/var/www/alcl/admin/lib/Model/Kit.php",
+		"/var/www/alcl/admin/lib/Model/LedgerAll.php",
+		"/var/www/alcl/admin/lib/Model/KitLedgers.php",
+		"/var/www/alcl/admin/lib/Form/Field/ledger.php",
+		"/var/www/alcl/lib/Frontend.php",
+		"/var/www/alcl/page/gallary.html",
+		"/var/www/alcl/page/about.html",
+		"/var/www/alcl/page/contactus.html",
+		"/var/www/alcl/page/opportunity.html",
+		"/var/www/alcl/page/profile.html",
+		"/var/www/alcl/templates/default/shared.html",
+		"/var/www/alcl/templates/default/styles/style.css",
+		"/var/www/alcl/templates/default/shared1.html",
+		"/var/www/alcl/templates/default/css/styles.less",
+		"/var/www/alcl/templates/default/css/minix.less",
+		"/var/www/alcl/templates/default/css/settings.less",
+		"/var/www/alcl/atk4/templates/shared/css/atk-main.less",
+		"/var/www/alcl/atk4/templates/shared/css/atk-settings.less",
+		"/var/www/alcl/templates/default_old/shared.html",
+		"/var/www/alcl/atk4/templates/shared/css/atk-mixins.less",
+		"/var/www/alcl/templates/default/css/style.less",
+		"/var/www/alcl/templates/default/js/less.js",
+		"/var/www/alcl/page/index.php",
+		"/var/www/alcl/templates/default_old/page/index.html",
+		"/var/www/alcl/templates/default/page/index.html",
+		"/var/www/alcl/templates/default/templatemo_style.css",
+		"/var/www/alcl/templates/default/page/about.html",
+		"/var/www/sv/svusers/templates/default/shared.html",
+		"/var/www/alcl/atk4/templates/shared/shared.html",
+		"/var/www/alcl/templates/default/page/products.html",
+		"/var/www/alcl/templates/default/products.html",
+		"/var/www/alcl/config-default.php",
+		"/var/www/alcl/templatemo_322_sailing.zip",
+		"/home/gowrav/.config/sublime-text-2/Packages/SublimeLinter/SublimeLinter.sublime-settings",
+		"/var/www/xbank/administrator/components/com_xbank/controllers/balancesheet_cont.php",
+		"/var/www/xbank/administrator/components/com_xbank/controllers/test.php",
+		"/var/www/xbank/administrator/components/com_xbank/controllers/xbankschemes/recurring/recurringtransactionafterdeleted.php",
+		"/var/www/xbank/administrator/components/com_xbank/controllers/xbankschemes/recurring/recurringtransactionbeforedeleted.php",
+		"/var/www/xbank/administrator/components/com_xbank/controllers/report_cont.php",
+		"/var/www/sv/svusers/lib/Frontend.php",
+		"/var/www/xbank/administrator/components/com_xbank/controllers/xbankschemes/loan/loanaccountconfirm.php",
+		"/var/www/xbank/administrator/components/com_xbank/controllers/closing_cont.php",
+		"/var/www/xbank/administrator/components/com_xbank/controllers/xbankschemes/dds/ddsdaily.php",
+		"/var/www/xbank/administrator/components/com_xbank/controllers/xbankschemes/dds/ddsmonthly.php",
+		"/var/www/xbank/administrator/components/com_xbank/controllers/xbankschemes/dds/ddsyearly.php",
+		"/var/www/xbank/administrator/components/com_xbank/config/constants.php",
+		"/var/www/xbank/administrator/components/com_xbank/controllers/xbankschemes/fixedandmis/fixedandmisyearly.php",
+		"/var/www/xbank/administrator/components/com_xbank/controllers/xbankschemes/recurring/recurringyearly.php",
+		"/var/www/xbank/administrator/components/com_xbank/controllers/xbankschemes/recurring/recurringdaily.php",
+		"/var/www/xbank/administrator/components/com_xbank/controllers/xbankschemes/cc/ccmonthly.php",
+		"/var/www/xbank/administrator/components/com_xbank/controllers/xbankschemes/fixedandmis/fixedandmishalfyearly.php",
+		"/var/www/xbank/administrator/components/com_xbank/controllers/xbankschemes/fixedandmis/fixedandmismonthly.php",
+		"/var/www/xbank/administrator/components/com_xbank/controllers/xbankschemes/default/defaultyearly.php",
+		"/var/www/xbank/administrator/components/com_xbank/controllers/xbankschemes/fixedandmis/fixedandmisdaily.php",
+		"/var/www/xbank/administrator/components/com_xbank/controllers/xbankschemes/recurring/recurringmonthly.php",
+		"/var/www/xbank/administrator/components/com_xbank/models/scheme.php",
+		"/var/www/xbank/administrator/components/com_xbank/models/account.php",
+		"/var/www/xbank/administrator/components/com_xbank/controllers/xbankschemes/loan/loandaily.php",
+		"/var/www/xbank/administrator/components/com_xbank/controllers/xbankschemes/cc/ccdaily.php",
+		"/var/www/xbank/administrator/components/com_xbank/controllers/xbankschemes/loan/loanmonthly.php",
+		"/var/www/xbank/administrator/components/com_xbank/helpers/check_helper.php",
+		"/var/www/xbank/administrator/components/com_xbank/controllers/report_2_cont.php",
+		"/home/gowrav/sublime-projects/xbank.sublime-project",
+		"/var/www/xbank/administrator/components/com_xbank/xbank.php",
+		"/home/gowrav/.config/sublime-text-2/Packages/Xdebug/Xdebug.sublime-settings",
+		"/var/www/xbank/administrator/components/com_xbank/libraries/formcomponents.php",
+		"/var/www/xbank/administrator/components/com_xbank/controllers/corrections.php",
+		"/var/www/xbank/administrator/components/com_xbank/controllers/accounts_cont.php",
+		"/var/www/xbank/administrator/components/com_xbank/controllers/xbankschemes/savingandcurrent/savingandcurrenthalfyearly.php",
+		"/var/www/xbank/administrator/components/com_xbank/controllers/xbankschemes/savingandcurrent/savingandcurrentyearly.php",
+		"/var/www/xbank/administrator/components/com_xbank/controllers/xbankschemes/default/defaultaccountopenform.php",
+		"/var/www/xbank/administrator/components/com_xbank/controllers/xbankschemes/dds/ddsaccountopenform.php",
+		"/var/www/xbank/administrator/components/com_xbank/controllers/member_cont.php",
+		"/var/www/sr/templates/gk_restaurant/lib/gk.framework.php",
+		"/var/www/sr/templates/gk_restaurant/css/template.css",
+		"/var/www/sr/templates/gk_restaurant/index.php",
+		"/var/www/xbank/administrator/components/com_xbank/controllers/xbankschemes/moneyback/moneybackyearly.php",
+		"/var/www/xbank/atk/templates/default/shared.html",
+		"/var/www/xbank/atk/lib/Frontend.php",
+		"/var/www/xbank/administrator/components/com_xbank/helpers/toolbar_helper.php",
+		"/var/www/xbank/administrator/components/com_xbank/controllers/inventory_cont.php",
+		"/var/www/xbank/administrator/components/com_xbank/libraries/jq.php",
+		"/var/www/xbank/administrator/components/com_xbank/controllers/staff_cont.php",
+		"/var/www/accurate/templates/modern_flavor/css/template.css",
+		"/var/www/xbank/administrator/components/com_xbank/models/transaction.php",
+		"/var/www/xbank/administrator/components/com_xbank/views/report/tmpl/accountstatement.php",
+		"/var/www/xbank/configuration.php",
+		"/var/www/xbank/administrator/components/com_xbank/controllers/agent_cont.php",
+		"/var/www/xbank/administrator/components/com_xbank/controllers/branch_cont.php",
+		"/var/www/xbank/administrator/components/com_xbank/views/branch/tmpl/default.php",
+		"/var/www/xbank/administrator/components/com_xbank/views/report/tmpl/rdpremiumduelist.php",
+		"/var/www/xbank/administrator/components/com_xbank/controllers/com_xbank.php",
+		"/var/www/xbank/administrator/components/com_xbank/controllers/customreport_cont.php",
+		"/var/www/xbank/administrator/components/com_xbank/views/report/tmpl/pandl_accountTransactions.php",
+		"/var/www/xbank/administrator/components/com_xbank/views/report/tmpl/loan.php",
+		"/home/gowrav/testgame2/index.html",
+		"/home/gowrav/testgame/index.html",
+		"/var/www/xbank/administrator/components/com_xbank/views/balancesheet/tmpl/balancesheet.php",
+		"/var/www/xbank/administrator/components/com_xbank/views/report/tmpl/pandl_transactionDetails.php",
+		"/var/www/xbank/administrator/components/com_xbank/views/report/tmpl/daybook.php",
+		"/var/www/xbank/administrator/components/com_xbank/views/balancesheet/tmpl/head_row.php",
+		"/var/www/xbank/administrator/components/com_xbank/models/branch.php",
+		"/var/www/xbank/administrator/components/com_xbank/models/balancesheet.php",
+		"/var/www/xbank/administrator/components/com_xbank/controllers/search_cont.php",
+		"/var/www/xbank/administrator/components/com_xbank/controllers/schemes_cont.php",
+		"/var/www/xbank/administrator/components/com_xbank/libraries/form.php",
+		"/var/www/xbank/administrator/components/com_xbank/controllers/transaction_cont.php",
+		"/var/www/xbank/administrator/components/com_xbank/models/agent.php",
+		"/var/www/xbank/administrator/components/com_xbank/controllers/utility_cont.php",
+		"/var/www/xbank/administrator/components/com_xbank/libraries/jq/css/TableTools.css",
+		"/var/www/xbank/administrator/components/com_xbank/libraries/jq/js/jquery.dataTables.js",
+		"/var/www/job_port/configuration.php",
+		"/var/www/xbank/administrator/components/com_xbank/views/balancesheet/view.html.php",
+		"/var/www/xbank/administrator/components/com_xbank/views/branch/view.html.php",
+		"/var/www/xbank/administrator/components/com_xbank/models/balance_sheet.php",
+		"/var/www/xbank/administrator/components/com_xbank/views/search/tmpl/searchAccountsView.php",
+		"/var/www/xbank/administrator/components/com_xbank/controllers/xbankschemes/dds/ddsdepositexecute.php",
+		"/var/www/xbank/administrator/components/com_xbank/controllers/xbankschemes/dds/ddsaccountconfirm.php"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+			"/var/www/xbank/administrator/components/com_xbank/controllers/xbankschemes",
+			"/var/www/xbank/administrator/components/com_xbank",
+			"/var/www/atkschool/",
+			"/var/www/ffm/admin/lib/Model",
+			"/var/www/ffm/pos/page",
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"famil",
+			"This is your first",
+			"clear",
+			"This is your first static page. Custom template is used for a page if it is found in this directory. ",
+			"USANA",
+			"opacity",
+			"about",
+			"USANA",
+			"ligh",
+			"account_ty",
+			"ACCOUNT_TYPE_DDS",
+			"ACCOUNT_TYPES",
+			"UPDATE.*SET.*MaturedStatus.*WHERE",
+			"UPDATE(.*)SET(.*)MatureStatus(.*)WHERE",
+			"UPDATE(.)*SET(.)*MatureStatus(.)*WHERE",
+			"(\"set\"|\"SET\")[a-zA-Z0-9 ]*(\"MaturityStatus\")[ ]*=[ ]*1[a-zA-Z0-9 ]*(\"where\"|\"WHERE\")",
+			"[\"set\"|\"SET\"][a-zA-Z0-9 ]*[\"MaturityStatus\"][ ]*=[ ]*1[a-zA-Z0-9 ]*[\"where\"|\"WHERE\"]",
+			"MaturityStatus = 1",
+			"MaturityStatus=1",
+			"SET[.]*MaturityStatus[ ]*=[ ]*1[.]*WHERE",
+			"SET[^]*MaturityStatus[ ]*=[ ]*1[^]*WHERE",
+			"SET*MaturityStatus*=*1*WHERE",
+			"created_at",
+			"UPDATE accounts as a JOIN schemes",
+			"join schemes as s SET a.CurrentInterest=",
+			"UPDATE jos_xaccounts as a",
+			"Jtoolbarhelper",
+			"UPDATE accounts a join transactions t",
+			"getReportManagementToolBar",
+			"getNewReportSubMenus",
+			"reference_account",
+			"parent",
+			"duestogive",
+			"echo $repo",
+			"getReportManagementToolBar",
+			"defau",
+			"getReportManagementToolBar",
+			"getNewReportManagementToolBar",
+			"getReportManagementToolBar",
+			"agentme",
+			"getReportManagementToolBar",
+			"getAllSchemesForCurrentBranch",
+			"re(",
+			"getUtilityManagementToolBar",
+			"Account_Number",
+			"post",
+			"~",
+			"link",
+			"page_start",
+			"url",
+			"page",
+			"+1 day",
+			"getReporttable",
+			"$docsarr",
+			"(\"",
+			"documents",
+			"getReporttable",
+			"::ca",
+			"limit",
+			"reports",
+			"php",
+			"crud",
+			"This is not one of the offered values",
+			"permissions",
+			"model",
+			"grid",
+			"Guardian",
+			"\n ",
+			"addTabURL",
+			"icon",
+			"icone",
+			"loading",
+			"sans",
+			"enum",
+			"500",
+			"`ffm`.",
+			"INSERT INTO `ffm`.`jos_xxheads` (`id`, `name`, `type`, `isPANDL`) VALUES",
+			"3300",
+			"1px",
+			"format",
+			"format=raw",
+			"i",
+			"header",
+			"model_ledger",
+			"DefaultLedgers",
+			",\n                \"In Direct Expenses\"    =>11",
+			"cur_pos",
+			"Vouchers",
+			"Voucher",
+			"grp",
+			"page_group_",
+			"ldgrs",
+			"vchr",
+			"$grid",
+			"mark_green",
+			"= ",
+			"$this->addMenuItem(\"reports_letters\",\"Printing Letters\");",
+			"this",
+			"Model_Distributor",
+			"sponsor",
+			"Enetr",
+			"tabs",
+			"this"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": true,
+		"replace_history":
+		[
+			"page_groups_"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 4,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "pos/templates/default/shared.html",
+					"settings":
+					{
+						"buffer_size": 2292,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2071,
+								2071
+							]
+						],
+						"settings":
+						{
+							"annotations":
+							[
+								"TODO",
+								"README",
+								"FIXME"
+							],
+							"csslint_options":
+							{
+								"adjoining-classes": "warning",
+								"box-model": true,
+								"box-sizing": "warning",
+								"compatible-vendor-prefixes": "warning",
+								"display-property-grouping": true,
+								"duplicate-background-images": "warning",
+								"duplicate-properties": true,
+								"empty-rules": true,
+								"errors": true,
+								"fallback-colors": "warning",
+								"floats": "warning",
+								"font-faces": "warning",
+								"font-sizes": "warning",
+								"gradients": "warning",
+								"ids": "warning",
+								"import": "warning",
+								"important": "warning",
+								"known-properties": true,
+								"outline-none": "warning",
+								"overqualified-elements": "warning",
+								"qualified-headings": "warning",
+								"regex-selectors": "warning",
+								"rules-count": "warning",
+								"shorthand": "warning",
+								"star-property-hack": "warning",
+								"text-indent": "warning",
+								"underscore-property-hack": "warning",
+								"unique-headings": "warning",
+								"universal-selector": "warning",
+								"vendor-prefix": true,
+								"zero-units": "warning"
+							},
+							"gjslint_ignore":
+							[
+								110.0
+							],
+							"gjslint_options":
+							[
+							],
+							"javascript_linter": "jshint",
+							"jshint_options":
+							{
+								"browser": true,
+								"evil": true,
+								"regexdash": true,
+								"sub": true,
+								"trailing": true,
+								"wsh": true
+							},
+							"pep8": true,
+							"pep8_ignore":
+							[
+								"E501"
+							],
+							"perl_linter": "perlcritic",
+							"pyflakes_ignore":
+							[
+							],
+							"pyflakes_ignore_import_*": true,
+							"sublimelinter": true,
+							"sublimelinter_delay": 2.0,
+							"sublimelinter_disable":
+							[
+							],
+							"sublimelinter_executable_map":
+							{
+							},
+							"sublimelinter_fill_outlines": false,
+							"sublimelinter_gutter_marks": false,
+							"sublimelinter_mark_style": "outline",
+							"sublimelinter_notes": false,
+							"sublimelinter_objj_check_ascii": false,
+							"sublimelinter_popup_errors_on_save": false,
+							"sublimelinter_syntax_map":
+							{
+								"C++": "c",
+								"Python Django": "python",
+								"Ruby on Rails": "ruby"
+							},
+							"sublimelinter_wrap_find": true,
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 402.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "pos/atk4/lib/jQuery.php",
+					"settings":
+					{
+						"buffer_size": 4858,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1791,
+								1791
+							]
+						],
+						"settings":
+						{
+							"annotations":
+							[
+								"TODO",
+								"README",
+								"FIXME"
+							],
+							"csslint_options":
+							{
+								"adjoining-classes": "warning",
+								"box-model": true,
+								"box-sizing": "warning",
+								"compatible-vendor-prefixes": "warning",
+								"display-property-grouping": true,
+								"duplicate-background-images": "warning",
+								"duplicate-properties": true,
+								"empty-rules": true,
+								"errors": true,
+								"fallback-colors": "warning",
+								"floats": "warning",
+								"font-faces": "warning",
+								"font-sizes": "warning",
+								"gradients": "warning",
+								"ids": "warning",
+								"import": "warning",
+								"important": "warning",
+								"known-properties": true,
+								"outline-none": "warning",
+								"overqualified-elements": "warning",
+								"qualified-headings": "warning",
+								"regex-selectors": "warning",
+								"rules-count": "warning",
+								"shorthand": "warning",
+								"star-property-hack": "warning",
+								"text-indent": "warning",
+								"underscore-property-hack": "warning",
+								"unique-headings": "warning",
+								"universal-selector": "warning",
+								"vendor-prefix": true,
+								"zero-units": "warning"
+							},
+							"gjslint_ignore":
+							[
+								110.0
+							],
+							"gjslint_options":
+							[
+							],
+							"javascript_linter": "jshint",
+							"jshint_options":
+							{
+								"browser": true,
+								"evil": true,
+								"regexdash": true,
+								"sub": true,
+								"trailing": true,
+								"wsh": true
+							},
+							"pep8": true,
+							"pep8_ignore":
+							[
+								"E501"
+							],
+							"perl_linter": "perlcritic",
+							"pyflakes_ignore":
+							[
+							],
+							"pyflakes_ignore_import_*": true,
+							"sublimelinter": true,
+							"sublimelinter_delay": 2.0,
+							"sublimelinter_disable":
+							[
+							],
+							"sublimelinter_executable_map":
+							{
+							},
+							"sublimelinter_fill_outlines": false,
+							"sublimelinter_gutter_marks": false,
+							"sublimelinter_mark_style": "outline",
+							"sublimelinter_notes": false,
+							"sublimelinter_objj_check_ascii": false,
+							"sublimelinter_popup_errors_on_save": false,
+							"sublimelinter_syntax_map":
+							{
+								"C++": "c",
+								"Python Django": "python",
+								"Ruby on Rails": "ruby"
+							},
+							"sublimelinter_wrap_find": true,
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 335.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "pos/config-default.php",
+					"settings":
+					{
+						"buffer_size": 516,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								204,
+								204
+							]
+						],
+						"settings":
+						{
+							"annotations":
+							[
+								"TODO",
+								"README",
+								"FIXME"
+							],
+							"csslint_options":
+							{
+								"adjoining-classes": "warning",
+								"box-model": true,
+								"box-sizing": "warning",
+								"compatible-vendor-prefixes": "warning",
+								"display-property-grouping": true,
+								"duplicate-background-images": "warning",
+								"duplicate-properties": true,
+								"empty-rules": true,
+								"errors": true,
+								"fallback-colors": "warning",
+								"floats": "warning",
+								"font-faces": "warning",
+								"font-sizes": "warning",
+								"gradients": "warning",
+								"ids": "warning",
+								"import": "warning",
+								"important": "warning",
+								"known-properties": true,
+								"outline-none": "warning",
+								"overqualified-elements": "warning",
+								"qualified-headings": "warning",
+								"regex-selectors": "warning",
+								"rules-count": "warning",
+								"shorthand": "warning",
+								"star-property-hack": "warning",
+								"text-indent": "warning",
+								"underscore-property-hack": "warning",
+								"unique-headings": "warning",
+								"universal-selector": "warning",
+								"vendor-prefix": true,
+								"zero-units": "warning"
+							},
+							"gjslint_ignore":
+							[
+								110.0
+							],
+							"gjslint_options":
+							[
+							],
+							"javascript_linter": "jshint",
+							"jshint_options":
+							{
+								"browser": true,
+								"evil": true,
+								"regexdash": true,
+								"sub": true,
+								"trailing": true,
+								"wsh": true
+							},
+							"pep8": true,
+							"pep8_ignore":
+							[
+								"E501"
+							],
+							"perl_linter": "perlcritic",
+							"pyflakes_ignore":
+							[
+							],
+							"pyflakes_ignore_import_*": true,
+							"sublimelinter": true,
+							"sublimelinter_delay": 2.0,
+							"sublimelinter_disable":
+							[
+							],
+							"sublimelinter_executable_map":
+							{
+							},
+							"sublimelinter_fill_outlines": false,
+							"sublimelinter_gutter_marks": false,
+							"sublimelinter_mark_style": "outline",
+							"sublimelinter_notes": false,
+							"sublimelinter_objj_check_ascii": false,
+							"sublimelinter_popup_errors_on_save": false,
+							"sublimelinter_syntax_map":
+							{
+								"C++": "c",
+								"Python Django": "python",
+								"Ruby on Rails": "ruby"
+							},
+							"sublimelinter_wrap_find": true,
+							"syntax": "Packages/PHP/PHP.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "pos/page/pins/sales.php",
+					"settings":
+					{
+						"buffer_size": 474,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"annotations":
+							[
+								"TODO",
+								"README",
+								"FIXME"
+							],
+							"csslint_options":
+							{
+								"adjoining-classes": "warning",
+								"box-model": true,
+								"box-sizing": "warning",
+								"compatible-vendor-prefixes": "warning",
+								"display-property-grouping": true,
+								"duplicate-background-images": "warning",
+								"duplicate-properties": true,
+								"empty-rules": true,
+								"errors": true,
+								"fallback-colors": "warning",
+								"floats": "warning",
+								"font-faces": "warning",
+								"font-sizes": "warning",
+								"gradients": "warning",
+								"ids": "warning",
+								"import": "warning",
+								"important": "warning",
+								"known-properties": true,
+								"outline-none": "warning",
+								"overqualified-elements": "warning",
+								"qualified-headings": "warning",
+								"regex-selectors": "warning",
+								"rules-count": "warning",
+								"shorthand": "warning",
+								"star-property-hack": "warning",
+								"text-indent": "warning",
+								"underscore-property-hack": "warning",
+								"unique-headings": "warning",
+								"universal-selector": "warning",
+								"vendor-prefix": true,
+								"zero-units": "warning"
+							},
+							"gjslint_ignore":
+							[
+								110.0
+							],
+							"gjslint_options":
+							[
+							],
+							"javascript_linter": "jshint",
+							"jshint_options":
+							{
+								"browser": true,
+								"evil": true,
+								"regexdash": true,
+								"sub": true,
+								"trailing": true,
+								"wsh": true
+							},
+							"pep8": true,
+							"pep8_ignore":
+							[
+								"E501"
+							],
+							"perl_linter": "perlcritic",
+							"pyflakes_ignore":
+							[
+							],
+							"pyflakes_ignore_import_*": true,
+							"sublimelinter": true,
+							"sublimelinter_delay": 2.0,
+							"sublimelinter_disable":
+							[
+							],
+							"sublimelinter_executable_map":
+							{
+							},
+							"sublimelinter_fill_outlines": false,
+							"sublimelinter_gutter_marks": false,
+							"sublimelinter_mark_style": "outline",
+							"sublimelinter_notes": false,
+							"sublimelinter_objj_check_ascii": false,
+							"sublimelinter_popup_errors_on_save": false,
+							"sublimelinter_syntax_map":
+							{
+								"C++": "c",
+								"Python Django": "python",
+								"Ruby on Rails": "ruby"
+							},
+							"sublimelinter_wrap_find": true,
+							"syntax": "Packages/PHP/PHP.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "pos/page/pins/distributorsales.php",
+					"settings":
+					{
+						"buffer_size": 969,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"annotations":
+							[
+								"TODO",
+								"README",
+								"FIXME"
+							],
+							"csslint_options":
+							{
+								"adjoining-classes": "warning",
+								"box-model": true,
+								"box-sizing": "warning",
+								"compatible-vendor-prefixes": "warning",
+								"display-property-grouping": true,
+								"duplicate-background-images": "warning",
+								"duplicate-properties": true,
+								"empty-rules": true,
+								"errors": true,
+								"fallback-colors": "warning",
+								"floats": "warning",
+								"font-faces": "warning",
+								"font-sizes": "warning",
+								"gradients": "warning",
+								"ids": "warning",
+								"import": "warning",
+								"important": "warning",
+								"known-properties": true,
+								"outline-none": "warning",
+								"overqualified-elements": "warning",
+								"qualified-headings": "warning",
+								"regex-selectors": "warning",
+								"rules-count": "warning",
+								"shorthand": "warning",
+								"star-property-hack": "warning",
+								"text-indent": "warning",
+								"underscore-property-hack": "warning",
+								"unique-headings": "warning",
+								"universal-selector": "warning",
+								"vendor-prefix": true,
+								"zero-units": "warning"
+							},
+							"gjslint_ignore":
+							[
+								110.0
+							],
+							"gjslint_options":
+							[
+							],
+							"javascript_linter": "jshint",
+							"jshint_options":
+							{
+								"browser": true,
+								"evil": true,
+								"regexdash": true,
+								"sub": true,
+								"trailing": true,
+								"wsh": true
+							},
+							"pep8": true,
+							"pep8_ignore":
+							[
+								"E501"
+							],
+							"perl_linter": "perlcritic",
+							"pyflakes_ignore":
+							[
+							],
+							"pyflakes_ignore_import_*": true,
+							"sublimelinter": true,
+							"sublimelinter_delay": 2.0,
+							"sublimelinter_disable":
+							[
+							],
+							"sublimelinter_executable_map":
+							{
+							},
+							"sublimelinter_fill_outlines": false,
+							"sublimelinter_gutter_marks": false,
+							"sublimelinter_mark_style": "outline",
+							"sublimelinter_notes": false,
+							"sublimelinter_objj_check_ascii": false,
+							"sublimelinter_popup_errors_on_save": false,
+							"sublimelinter_syntax_map":
+							{
+								"C++": "c",
+								"Python Django": "python",
+								"Ruby on Rails": "ruby"
+							},
+							"sublimelinter_wrap_find": true,
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 34.0
+	},
+	"input":
+	{
+		"height": 33.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.git":
+	{
+		"height": 112.0
+	},
+	"output.xdebug_inspect":
+	{
+		"height": 118.0
+	},
+	"replace":
+	{
+		"height": 0.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"pospinsdistribut",
+				"pos/page/pins/distributorsales.php"
+			],
+			[
+				"pospinsa",
+				"pos/page/pins/sales.php"
+			],
+			[
+				"posjq",
+				"pos/atk4/lib/jQuery.php"
+			],
+			[
+				"posdefsh",
+				"pos/templates/default/shared.html"
+			],
+			[
+				"adminmodetra",
+				"admin/lib/Model/PinTransaction.php"
+			],
+			[
+				"adminmodelpin",
+				"admin/lib/Model/Pin.php"
+			],
+			[
+				"adminpageping",
+				"admin/page/pin/generate.php"
+			],
+			[
+				"adminmodeldi",
+				"admin/lib/Model/Distributor.php"
+			],
+			[
+				"adminpagepinge",
+				"admin/page/pin/generate.php"
+			],
+			[
+				"kitl",
+				"admin/lib/Model/KitLedgers.php"
+			],
+			[
+				"",
+				"admin/lib/Model/Kit.php"
+			],
+			[
+				"adminkitdash",
+				"admin/page/kit/dashboard.php"
+			],
+			[
+				"adminmodled",
+				"admin/lib/Model/LedgerAll.php"
+			],
+			[
+				"adminmodelkit.",
+				"admin/lib/Model/Kit.php"
+			],
+			[
+				"adminmodelkit",
+				"admin/lib/Model/KitTransfers.php"
+			],
+			[
+				"adminpagekitdash",
+				"admin/page/kit/dashboard.php"
+			],
+			[
+				"adminpagepos",
+				"admin/page/pos.php"
+			],
+			[
+				"adminmodelpos",
+				"admin/lib/Model/Pos.php"
+			],
+			[
+				"defsty",
+				"templates/default/styles/style.css"
+			],
+			[
+				"atkjq",
+				"atk4/lib/jQuery.php"
+			],
+			[
+				"atksettless",
+				"atk4/templates/shared/css/atk-settings.less"
+			],
+			[
+				"atkmain",
+				"atk4/templates/shared/css/atk-main.less"
+			],
+			[
+				"atksettle",
+				"atk4/templates/shared/css/atk-settings.less"
+			],
+			[
+				"atkmainless",
+				"atk4/templates/shared/css/atk-main.less"
+			],
+			[
+				"atkmile",
+				"atk4/templates/shared/css/atk-mixins.less"
+			],
+			[
+				"defaushare",
+				"templates/default/shared.html"
+			],
+			[
+				"atksharehtml",
+				"atk4/templates/shared/shared.html"
+			],
+			[
+				"utilicont",
+				"com_xbank/controllers/utility_cont.php"
+			],
+			[
+				"balancesheecon",
+				"com_xbank/controllers/balancesheet_cont.php"
+			],
+			[
+				"recurtrandele",
+				"com_xbank/controllers/xbankschemes/recurring/recurringtransactionafterdeleted.php"
+			],
+			[
+				"recurreingbeforedel",
+				"com_xbank/controllers/xbankschemes/recurring/recurringtransactionbeforedeleted.php"
+			],
+			[
+				"reportc",
+				"com_xbank/controllers/report_cont.php"
+			],
+			[
+				"test",
+				"com_xbank/controllers/test.php"
+			],
+			[
+				"loanacccon",
+				"com_xbank/controllers/xbankschemes/loan/loanaccountconfirm.php"
+			],
+			[
+				"ddsyea",
+				"com_xbank/controllers/xbankschemes/dds/ddsyearly.php"
+			],
+			[
+				"consta",
+				"com_xbank/config/constants.php"
+			],
+			[
+				"ddsmonth",
+				"com_xbank/controllers/xbankschemes/dds/ddsmonthly.php"
+			],
+			[
+				"ddsdail",
+				"com_xbank/controllers/xbankschemes/dds/ddsdaily.php"
+			],
+			[
+				"ddsye",
+				"com_xbank/controllers/xbankschemes/dds/ddsyearly.php"
+			],
+			[
+				"closincon",
+				"com_xbank/controllers/closing_cont.php"
+			],
+			[
+				"ddsmon",
+				"com_xbank/controllers/xbankschemes/dds/ddsmonthly.php"
+			],
+			[
+				"modelsche",
+				"com_xbank/models/scheme.php"
+			],
+			[
+				"modelaccoun",
+				"com_xbank/models/account.php"
+			],
+			[
+				"closingcont",
+				"com_xbank/controllers/closing_cont.php"
+			],
+			[
+				"recurryea",
+				"com_xbank/controllers/xbankschemes/recurring/recurringyearly.php"
+			],
+			[
+				"recurrmont",
+				"com_xbank/controllers/xbankschemes/recurring/recurringmonthly.php"
+			],
+			[
+				"recurringdaily",
+				"com_xbank/controllers/xbankschemes/recurring/recurringdaily.php"
+			],
+			[
+				"const",
+				"com_xbank/config/constants.php"
+			],
+			[
+				"ccmonth",
+				"com_xbank/controllers/xbankschemes/cc/ccmonthly.php"
+			],
+			[
+				"loanmonth",
+				"com_xbank/controllers/xbankschemes/loan/loanmonthly.php"
+			],
+			[
+				"loandail",
+				"com_xbank/controllers/xbankschemes/loan/loandaily.php"
+			],
+			[
+				"recurredail",
+				"com_xbank/controllers/xbankschemes/recurring/recurringdaily.php"
+			],
+			[
+				"fixedandmishal",
+				"com_xbank/controllers/xbankschemes/fixedandmis/fixedandmishalfyearly.php"
+			],
+			[
+				"cont",
+				"com_xbank/config/constants.php"
+			],
+			[
+				"helper",
+				"com_xbank/helpers/check_helper.php"
+			],
+			[
+				"report_2",
+				"com_xbank/controllers/report_2_cont.php"
+			],
+			[
+				"correction",
+				"com_xbank/controllers/corrections.php"
+			],
+			[
+				"formcompon",
+				"com_xbank/libraries/formcomponents.php"
+			],
+			[
+				"recurringyearl",
+				"com_xbank/controllers/xbankschemes/recurring/recurringyearly.php"
+			],
+			[
+				"account_cont",
+				"com_xbank/controllers/accounts_cont.php"
+			],
+			[
+				"defaultyear",
+				"com_xbank/controllers/xbankschemes/default/defaultyearly.php"
+			],
+			[
+				"savingandcurha",
+				"com_xbank/controllers/xbankschemes/savingandcurrent/savingandcurrenthalfyearly.php"
+			],
+			[
+				"savingandcurryear",
+				"com_xbank/controllers/xbankschemes/savingandcurrent/savingandcurrentyearly.php"
+			],
+			[
+				"ddsyearl",
+				"com_xbank/controllers/xbankschemes/dds/ddsyearly.php"
+			],
+			[
+				"fixedandmisyea",
+				"com_xbank/controllers/xbankschemes/fixedandmis/fixedandmisyearly.php"
+			],
+			[
+				"fixedandmisye",
+				"com_xbank/controllers/xbankschemes/fixedandmis/fixedandmisyearly.php"
+			],
+			[
+				"conts",
+				"com_xbank/config/constants.php"
+			],
+			[
+				"accountcont",
+				"com_xbank/controllers/accounts_cont.php"
+			],
+			[
+				"member_con",
+				"com_xbank/controllers/member_cont.php"
+			],
+			[
+				"ddsyear",
+				"com_xbank/controllers/xbankschemes/dds/ddsyearly.php"
+			],
+			[
+				"ddsmonthl",
+				"com_xbank/controllers/xbankschemes/dds/ddsmonthly.php"
+			],
+			[
+				"savingandcurrehalfye",
+				"com_xbank/controllers/xbankschemes/savingandcurrent/savingandcurrenthalfyearly.php"
+			],
+			[
+				"savingandcurrhal",
+				"com_xbank/controllers/xbankschemes/savingandcurrent/savingandcurrenthalfyearly.php"
+			],
+			[
+				"toolbarhe",
+				"com_xbank/helpers/toolbar_helper.php"
+			],
+			[
+				"jq.php",
+				"com_xbank/libraries/jq.php"
+			],
+			[
+				"jq.",
+				"com_xbank/libraries/jq.php"
+			],
+			[
+				"invent",
+				"com_xbank/controllers/inventory_cont.php"
+			],
+			[
+				"toolbar",
+				"com_xbank/helpers/toolbar_helper.php"
+			],
+			[
+				"shared",
+				"atk/templates/default/shared.html"
+			],
+			[
+				"front",
+				"atk/lib/Frontend.php"
+			],
+			[
+				"staffcont",
+				"controllers/staff_cont.php"
+			],
+			[
+				"helperche",
+				"helpers/check_helper.php"
+			],
+			[
+				"reportcon",
+				"controllers/report_cont.php"
+			],
+			[
+				"checkhelper",
+				"helpers/check_helper.php"
+			],
+			[
+				"reportcont",
+				"controllers/report_cont.php"
+			],
+			[
+				"report",
+				"controllers/report_2_cont.php"
+			],
+			[
+				"toolba",
+				"helpers/toolbar_helper.php"
+			],
+			[
+				"modeltra",
+				"models/transaction.php"
+			],
+			[
+				"reportaccount",
+				"views/report/tmpl/accountstatement.php"
+			],
+			[
+				"modelaccou",
+				"models/account.php"
+			],
+			[
+				"modeltran",
+				"models/transaction.php"
+			],
+			[
+				"agentcont",
+				"controllers/agent_cont.php"
+			],
+			[
+				"membercont",
+				"controllers/member_cont.php"
+			],
+			[
+				"branchtmpl",
+				"views/branch/tmpl/default.php"
+			],
+			[
+				"branch",
+				"controllers/branch_cont.php"
+			],
+			[
+				"tool",
+				"helpers/toolbar_helper.php"
+			],
+			[
+				"reportrdpre",
+				"views/report/tmpl/rdpremiumduelist.php"
+			],
+			[
+				"com_xb",
+				"controllers/com_xbank.php"
+			],
+			[
+				"custome",
+				"controllers/customreport_cont.php"
+			],
+			[
+				"com_xba",
+				"controllers/com_xbank.php"
+			],
+			[
+				"modeltr",
+				"models/transaction.php"
+			],
+			[
+				"agent",
+				"controllers/agent_cont.php"
+			],
+			[
+				"report2",
+				"controllers/report_2_cont.php"
+			],
+			[
+				"controllercom_",
+				"controllers/com_xbank.php"
+			],
+			[
+				"modelaccount",
+				"models/account.php"
+			],
+			[
+				"report/loa",
+				"views/report/tmpl/loan.php"
+			],
+			[
+				"custom",
+				"controllers/customreport_cont.php"
+			],
+			[
+				"pandltra",
+				"views/report/tmpl/pandl_accountTransactions.php"
+			],
+			[
+				"balancesheet",
+				"controllers/balancesheet_cont.php"
+			],
+			[
+				"balance",
+				"controllers/balancesheet_cont.php"
+			],
+			[
+				"checkhelp",
+				"helpers/check_helper.php"
+			],
+			[
+				"modeltransa",
+				"models/transaction.php"
+			],
+			[
+				"pandtransa",
+				"views/report/tmpl/pandl_transactionDetails.php"
+			],
+			[
+				"reportday",
+				"views/report/tmpl/daybook.php"
+			],
+			[
+				"headrow",
+				"views/balancesheet/tmpl/head_row.php"
+			],
+			[
+				"modelbranch",
+				"models/branch.php"
+			],
+			[
+				"modelbala",
+				"models/balancesheet.php"
+			],
+			[
+				"controllerbalance",
+				"controllers/balancesheet_cont.php"
+			],
+			[
+				"modelbranc",
+				"models/branch.php"
+			],
+			[
+				"reportdayb",
+				"views/report/tmpl/daybook.php"
+			],
+			[
+				"pandltransa",
+				"views/report/tmpl/pandl_transactionDetails.php"
+			],
+			[
+				"modelbalance",
+				"models/balancesheet.php"
+			],
+			[
+				"schemecont",
+				"controllers/schemes_cont.php"
+			],
+			[
+				"librj",
+				"libraries/jq.php"
+			],
+			[
+				"search",
+				"controllers/search_cont.php"
+			],
+			[
+				"balanceshett",
+				"controllers/balancesheet_cont.php"
+			],
+			[
+				"check",
+				"helpers/check_helper.php"
+			],
+			[
+				"accountscont",
+				"controllers/accounts_cont.php"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"selected_items":
+		[
+			[
+				"sv",
+				"/home/gowrav/sublime-projects/svadmin.sublime-project"
+			],
+			[
+				"",
+				"/home/gowrav/sublime-projects/svusers.sublime-project"
+			],
+			[
+				"s",
+				"/home/gowrav/sublime-projects/svusers.sublime-project"
+			],
+			[
+				"gift",
+				"/home/gowrav/Documents/sublime/giftuser.sublime-project"
+			],
+			[
+				"svadmin",
+				"/home/gowrav/sublime-projects/svadmin.sublime-project"
+			],
+			[
+				"bvm",
+				"/home/gowrav/sublime-projects/bvmsss.sublime-project"
+			],
+			[
+				"bvmss",
+				"/home/gowrav/sublime-projects/bvmsss.sublime-project"
+			],
+			[
+				"svadm",
+				"/home/gowrav/sublime-projects/svadmin.sublime-project"
+			],
+			[
+				"gift3",
+				"/home/gowrav/sublime-projects/gift3user.sublime-project"
+			],
+			[
+				"bvmsss",
+				"/home/gowrav/sublime-projects/bvmsss.sublime-project"
+			],
+			[
+				"xban",
+				"/home/gowrav/sublime-projects/xbank.sublime-project"
+			],
+			[
+				"ffm",
+				"/home/gowrav/sublime-projects/ffm-xmlm-admin.sublime-project"
+			],
+			[
+				"ffmus",
+				"/home/gowrav/sublime-projects/ffm-user.sublime-project"
+			],
+			[
+				"bv",
+				"/home/gowrav/sublime-projects/bvmsss.sublime-project"
+			],
+			[
+				"bvms",
+				"/home/gowrav/sublime-projects/bvmsss.sublime-project"
+			],
+			[
+				"ffmuser",
+				"/home/gowrav/sublime-projects/ffm-user.sublime-project"
+			],
+			[
+				"ffmadmin",
+				"/home/gowrav/sublime-projects/ffm-admin.sublime-project"
+			],
+			[
+				"erpnex",
+				"/home/gowrav/sublime-projects/erpnext.sublime-project"
+			],
+			[
+				"erpne",
+				"/home/gowrav/sublime-projects/erpnext.sublime-project"
+			],
+			[
+				"erp",
+				"/home/gowrav/sublime-projects/erpnext.sublime-project"
+			],
+			[
+				"ffmpos",
+				"/home/gowrav/sublime-projects/ffm-pos.sublime-project"
+			],
+			[
+				"bvmssol",
+				"/home/gowrav/sublime-projects/bvmsss-old.sublime-project"
+			],
+			[
+				"ffma",
+				"/home/gowrav/sublime-projects/ffm-admin.sublime-project"
+			],
+			[
+				"mis",
+				"/home/gowrav/sublime-projects/mis.sublime-project"
+			],
+			[
+				"bvmol",
+				"/home/gowrav/sublime-projects/bvmsss-old.sublime-project"
+			],
+			[
+				"bvmsssold",
+				"/home/gowrav/sublime-projects/bvmsss-old.sublime-project"
+			],
+			[
+				"bhoo",
+				"/var/www/bhoomi/bhoomi.sublime-project"
+			],
+			[
+				"bhoom",
+				"/var/www/bhoomi/bhoomi.sublime-project"
+			],
+			[
+				"bhoomi",
+				"/var/www/bhoomi/bhoomi.sublime-project"
+			],
+			[
+				"bcuser",
+				"/home/gowrav/sublime-projects/bc-users.sublime-project"
+			],
+			[
+				"ffmusers",
+				"/home/gowrav/sublime-projects/ffm-user.sublime-project"
+			],
+			[
+				"ffmxml",
+				"/home/gowrav/sublime-projects/ffm-xmlm-admin.sublime-project"
+			],
+			[
+				"eindianadmin",
+				"/var/www/e-indian/eindian-admin.sublime-project"
+			],
+			[
+				"eindmeme",
+				"/var/www/e-indian/eindian-members.sublime-project"
+			],
+			[
+				"eindia",
+				"/var/www/e-indian/eindian-members.sublime-project"
+			],
+			[
+				"bcadmin",
+				"/home/gowrav/sublime-projects/bc-admin.sublime-project"
+			],
+			[
+				"eindadmin",
+				"/var/www/e-indian/eindian-admin.sublime-project"
+			],
+			[
+				"ffmuse",
+				"/home/gowrav/sublime-projects/ffm-user.sublime-project"
+			],
+			[
+				"eindmem",
+				"/var/www/e-indian/eindian-members.sublime-project"
+			],
+			[
+				"einadmin",
+				"/var/www/e-indian/eindian-admin.sublime-project"
+			],
+			[
+				"wis",
+				"/var/www/wish/wish.sublime-project"
+			],
+			[
+				"pos",
+				"/var/www/ffm/pos.sublime-project"
+			],
+			[
+				"joo",
+				"/var/www/xagile/atk4-joomla.sublime-project"
+			],
+			[
+				"bho",
+				"/var/www/bhoomi/bhoomi.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 176.0,
+	"status_bar_visible": true
+}

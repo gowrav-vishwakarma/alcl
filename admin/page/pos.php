@@ -11,7 +11,7 @@ class page_pos extends Page {
         $this->add('Menu_Pos');
         
         $this->add('H1')->set("Manage Your Point Of sales Here ");
-        $crud=$this->add('CRUD');
+        $crud=$this->add('CRUD',array("allow_del"=>false));
         $crud->setModel('Pos');
         
     }

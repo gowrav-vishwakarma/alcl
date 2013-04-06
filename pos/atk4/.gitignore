@@ -1,0 +1,11 @@
+*.swp
+.svn
+*.swo
+*.bak
+*.sql.fail
+*.sql.ok
+/nbproject
+.project
+.buildpath
+.settings
+.DS_Store

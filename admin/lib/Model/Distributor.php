@@ -54,6 +54,8 @@ class Model_Distributor extends Model_Table {
         $this->hasMany("LegEntry","downline_id");
         $this->hasMany("MillionRewards","distributor_id");
         $this->hasMany("BillionRewards","distributor_id");
+        $this->hasMany("PinTransactionFrom","distributor_id");
+        $this->hasMany("PinTransactionTo","distributor_id");
 
         $this->hasMany("Pin","adcrd_id");
         $this->hasMany("UsedPins","adcrd_id");

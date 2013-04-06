@@ -26,7 +26,7 @@ class page_newregistration extends Page {
 												"-1"=>"select leg",
 												"A"=>"A",
 												"B"=>"B"))->set('-1');
-		$form->add('Order')->move('leg','after','sponsor')->now();
+		// $form->add('Order')->move('leg','after','sponsor')->now();
 		$form->addField('line','new_id','Distributor ID');
 		$form->addField('line','pin');
 		$form->addSubmit('Submit');

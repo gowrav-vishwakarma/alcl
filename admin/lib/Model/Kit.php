@@ -21,7 +21,7 @@ class Model_Kit extends Model_Table {
         $this->addField('PV');
         $this->addField('RP');
         // $this->addField('AmountToIntroducer');
-        $this->addField('Capping');
+        $this->addField('Capping')->caption("Weekly Capping");
         $this->addField('DefaultGreen')->type('boolean')->defaultValue(false);
         $this->addField('DefaultColor')->enum(array('blue','red'))->defaultValue('blue');
         $this->addField('published')->type('boolean')->defaultValue(true);

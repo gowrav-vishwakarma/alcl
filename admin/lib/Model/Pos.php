@@ -15,7 +15,7 @@ class Model_Pos extends Model_Table {
         $this->hasOne('LedgerAll','ledger_id')->system(true);
         
         $this->addField('name')->mandatory("Point of Sales Must have a Name");
-        $this->addField("type")->enum(array("Retailer","Depot"))->defaultValue("Retailer")->mandatory("Type of POS is must to specify");
+        $this->addField("type")->enum(array("Company","Company_Depot","Dealer","Retailer"))->defaultValue("Retailer")->mandatory("Type of POS is must to specify");
 
         $this->hasMany("MyStocks","pos_id");
         $this->hasMany('Staff','pos_id');
@@ -36,8 +36,8 @@ class Model_Pos extends Model_Table {
             $this->memorize("isNew", true);
         }else{
 //            DISABLE MAIN POS EDITING
-            // if($this->id == 1 or $this->recall('reset_mode',false))
-            //     throw $this->exception("You cannot Modify Company POS made default ".$this['type']);
+            if($this->id == 1 or $this->recall('reset_mode',false))
+                throw $this->exception("You cannot Modify Company POS made default ".$this['type']);
         }
     }
     
