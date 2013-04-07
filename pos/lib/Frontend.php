@@ -51,6 +51,18 @@ class Frontend extends ApiFrontend {
         // it and place in a separate class
         $this->add('Menu',null,'Menu')
             ->addMenuItem('index','DashBoard')
+            ->addMenuItem('admin_pos','POS Management')//ADMIN
+            ->addMenuItem('admin_kit_dashboard','Kit')//ADMIN
+            ->addMenuItem('admin_pin_dashboard','Pin')//ADMIN
+            ->addMenuItem('admin_prd_dsh','Product Mng')//ADMIN
+            ->addMenuItem('admin_actemp','Accounts Top')//ADMIN
+            ->addMenuItem('admin_distributor','Distributors')//ADMIN
+            ->addMenuItem('admin_closing','Closing')//ADMIN
+            ->addMenuItem('admin_repurchase','Repurchaes')//ADMIN
+            ;
+            // ->addMenuItem('index','DashBoard');
+            
+            $this->add('Menu',null,'Menu')
             ->addMenuItem('ledgers/my','A/C Heads')
             ->addMenuItem('vouchers/dashboard','A/C Vouchers')
             ->addMenuItem("pins/sales","Pin Management")

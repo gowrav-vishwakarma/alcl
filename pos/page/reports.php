@@ -3,6 +3,11 @@
 class page_reports extends Page {
 	function init(){
 		parent::init();
-		$this->add('Menu_Reports');
+		
+		$tabs=$this->add('Tabs');
+		$admin_tab=$tabs->addTab('Admin Reports');
+		$pos_tab=$tabs->addTab('POS Reports');
+		$pos_tab->add('Menu_Reports');
+		$admin_tab->add('Menu_AdminReports');
 	}
 }

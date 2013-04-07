@@ -500,42 +500,10 @@
 	"buffers":
 	[
 		{
-			"file": "pos/templates/default/shared.html",
+			"file": "pos/lib/View/DistributorSalesVoucher.php",
 			"settings":
 			{
-				"buffer_size": 2292,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "pos/atk4/lib/jQuery.php",
-			"settings":
-			{
-				"buffer_size": 4858,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "pos/config-default.php",
-			"settings":
-			{
-				"buffer_size": 516,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "pos/page/pins/sales.php",
-			"settings":
-			{
-				"buffer_size": 474,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "pos/page/pins/distributorsales.php",
-			"settings":
-			{
-				"buffer_size": 969,
+				"buffer_size": 2836,
 				"line_ending": "Unix"
 			}
 		}
@@ -660,17 +628,31 @@
 	},
 	"file_history":
 	[
-		"/var/www/alcl/admin/lib/Model/PinTransaction.php",
-		"/var/www/alcl/admin/page/pin/generate.php",
-		"/var/www/alcl/admin/lib/Model/Distributor.php",
-		"/var/www/alcl/admin/lib/Model/PinTransactionTo.php",
-		"/var/www/alcl/admin/lib/Model/PinTransactionFrom.php",
-		"/var/www/alcl/admin/lib/Model/Pin.php",
+		"/var/www/alcl/pos/page/vouchers/sales.php",
+		"/var/www/alcl/pos/page/pins/distributorsales.php",
 		"/var/www/alcl/admin/lib/Model/Pos.php",
 		"/var/www/alcl/admin/page/pos.php",
+		"/var/www/alcl/users/page/newregistration.php",
+		"/var/www/alcl/pos/config-default.php",
+		"/var/www/alcl/admin/lib/Model/Distributor.php",
+		"/var/www/alcl/pos/atk4-addons/autocomplete/js/autocomplete_univ.js",
+		"/var/www/alcl/users/atk4-addons/autocomplete/lib/Form/Field/basic.php",
+		"/var/www/alcl/users/atk4-addons/autocomplete/js/autocomplete_univ.js",
+		"/var/www/alcl/pos/atk4-addons/autocomplete/lib/Form/Field/basic.php",
+		"/var/www/alcl/admin/lib/Model/Admin.php",
+		"/var/www/alcl/pos/page/pins/sales.php",
+		"/var/www/alcl/pos/atk4/lib/jQuery.php",
+		"/var/www/alcl/pos/templates/default/shared.html",
+		"/var/www/alcl/pos/lib/Model/Pin.php",
+		"/var/www/alcl/admin/lib/Model/Kit.php",
+		"/var/www/alcl/users/config-default.php",
+		"/var/www/alcl/admin/lib/Model/Pin.php",
+		"/var/www/alcl/admin/lib/Model/PinTransaction.php",
+		"/var/www/alcl/admin/page/pin/generate.php",
+		"/var/www/alcl/admin/lib/Model/PinTransactionTo.php",
+		"/var/www/alcl/admin/lib/Model/PinTransactionFrom.php",
 		"/var/www/alcl/admin/page/kit/dashboard.php",
 		"/var/www/alcl/admin/lib/Model/KitTransfers.php",
-		"/var/www/alcl/admin/lib/Model/Kit.php",
 		"/var/www/alcl/admin/lib/Model/LedgerAll.php",
 		"/var/www/alcl/admin/lib/Model/KitLedgers.php",
 		"/var/www/alcl/admin/lib/Form/Field/ledger.php",
@@ -773,21 +755,7 @@
 		"/var/www/xbank/administrator/components/com_xbank/views/balancesheet/tmpl/head_row.php",
 		"/var/www/xbank/administrator/components/com_xbank/models/branch.php",
 		"/var/www/xbank/administrator/components/com_xbank/models/balancesheet.php",
-		"/var/www/xbank/administrator/components/com_xbank/controllers/search_cont.php",
-		"/var/www/xbank/administrator/components/com_xbank/controllers/schemes_cont.php",
-		"/var/www/xbank/administrator/components/com_xbank/libraries/form.php",
-		"/var/www/xbank/administrator/components/com_xbank/controllers/transaction_cont.php",
-		"/var/www/xbank/administrator/components/com_xbank/models/agent.php",
-		"/var/www/xbank/administrator/components/com_xbank/controllers/utility_cont.php",
-		"/var/www/xbank/administrator/components/com_xbank/libraries/jq/css/TableTools.css",
-		"/var/www/xbank/administrator/components/com_xbank/libraries/jq/js/jquery.dataTables.js",
-		"/var/www/job_port/configuration.php",
-		"/var/www/xbank/administrator/components/com_xbank/views/balancesheet/view.html.php",
-		"/var/www/xbank/administrator/components/com_xbank/views/branch/view.html.php",
-		"/var/www/xbank/administrator/components/com_xbank/models/balance_sheet.php",
-		"/var/www/xbank/administrator/components/com_xbank/views/search/tmpl/searchAccountsView.php",
-		"/var/www/xbank/administrator/components/com_xbank/controllers/xbankschemes/dds/ddsdepositexecute.php",
-		"/var/www/xbank/administrator/components/com_xbank/controllers/xbankschemes/dds/ddsaccountconfirm.php"
+		"/var/www/xbank/administrator/components/com_xbank/controllers/search_cont.php"
 	],
 	"find":
 	{
@@ -811,6 +779,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"autocomplete",
 			"famil",
 			"This is your first",
 			"clear",
@@ -932,482 +901,23 @@
 	"groups":
 	[
 		{
-			"selected": 4,
+			"selected": 0,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "pos/templates/default/shared.html",
+					"file": "pos/lib/View/DistributorSalesVoucher.php",
 					"settings":
 					{
-						"buffer_size": 2292,
+						"buffer_size": 2836,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								2071,
-								2071
-							]
-						],
-						"settings":
-						{
-							"annotations":
-							[
-								"TODO",
-								"README",
-								"FIXME"
-							],
-							"csslint_options":
-							{
-								"adjoining-classes": "warning",
-								"box-model": true,
-								"box-sizing": "warning",
-								"compatible-vendor-prefixes": "warning",
-								"display-property-grouping": true,
-								"duplicate-background-images": "warning",
-								"duplicate-properties": true,
-								"empty-rules": true,
-								"errors": true,
-								"fallback-colors": "warning",
-								"floats": "warning",
-								"font-faces": "warning",
-								"font-sizes": "warning",
-								"gradients": "warning",
-								"ids": "warning",
-								"import": "warning",
-								"important": "warning",
-								"known-properties": true,
-								"outline-none": "warning",
-								"overqualified-elements": "warning",
-								"qualified-headings": "warning",
-								"regex-selectors": "warning",
-								"rules-count": "warning",
-								"shorthand": "warning",
-								"star-property-hack": "warning",
-								"text-indent": "warning",
-								"underscore-property-hack": "warning",
-								"unique-headings": "warning",
-								"universal-selector": "warning",
-								"vendor-prefix": true,
-								"zero-units": "warning"
-							},
-							"gjslint_ignore":
-							[
-								110.0
-							],
-							"gjslint_options":
-							[
-							],
-							"javascript_linter": "jshint",
-							"jshint_options":
-							{
-								"browser": true,
-								"evil": true,
-								"regexdash": true,
-								"sub": true,
-								"trailing": true,
-								"wsh": true
-							},
-							"pep8": true,
-							"pep8_ignore":
-							[
-								"E501"
-							],
-							"perl_linter": "perlcritic",
-							"pyflakes_ignore":
-							[
-							],
-							"pyflakes_ignore_import_*": true,
-							"sublimelinter": true,
-							"sublimelinter_delay": 2.0,
-							"sublimelinter_disable":
-							[
-							],
-							"sublimelinter_executable_map":
-							{
-							},
-							"sublimelinter_fill_outlines": false,
-							"sublimelinter_gutter_marks": false,
-							"sublimelinter_mark_style": "outline",
-							"sublimelinter_notes": false,
-							"sublimelinter_objj_check_ascii": false,
-							"sublimelinter_popup_errors_on_save": false,
-							"sublimelinter_syntax_map":
-							{
-								"C++": "c",
-								"Python Django": "python",
-								"Ruby on Rails": "ruby"
-							},
-							"sublimelinter_wrap_find": true,
-							"syntax": "Packages/HTML/HTML.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 402.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "pos/atk4/lib/jQuery.php",
-					"settings":
-					{
-						"buffer_size": 4858,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1791,
-								1791
-							]
-						],
-						"settings":
-						{
-							"annotations":
-							[
-								"TODO",
-								"README",
-								"FIXME"
-							],
-							"csslint_options":
-							{
-								"adjoining-classes": "warning",
-								"box-model": true,
-								"box-sizing": "warning",
-								"compatible-vendor-prefixes": "warning",
-								"display-property-grouping": true,
-								"duplicate-background-images": "warning",
-								"duplicate-properties": true,
-								"empty-rules": true,
-								"errors": true,
-								"fallback-colors": "warning",
-								"floats": "warning",
-								"font-faces": "warning",
-								"font-sizes": "warning",
-								"gradients": "warning",
-								"ids": "warning",
-								"import": "warning",
-								"important": "warning",
-								"known-properties": true,
-								"outline-none": "warning",
-								"overqualified-elements": "warning",
-								"qualified-headings": "warning",
-								"regex-selectors": "warning",
-								"rules-count": "warning",
-								"shorthand": "warning",
-								"star-property-hack": "warning",
-								"text-indent": "warning",
-								"underscore-property-hack": "warning",
-								"unique-headings": "warning",
-								"universal-selector": "warning",
-								"vendor-prefix": true,
-								"zero-units": "warning"
-							},
-							"gjslint_ignore":
-							[
-								110.0
-							],
-							"gjslint_options":
-							[
-							],
-							"javascript_linter": "jshint",
-							"jshint_options":
-							{
-								"browser": true,
-								"evil": true,
-								"regexdash": true,
-								"sub": true,
-								"trailing": true,
-								"wsh": true
-							},
-							"pep8": true,
-							"pep8_ignore":
-							[
-								"E501"
-							],
-							"perl_linter": "perlcritic",
-							"pyflakes_ignore":
-							[
-							],
-							"pyflakes_ignore_import_*": true,
-							"sublimelinter": true,
-							"sublimelinter_delay": 2.0,
-							"sublimelinter_disable":
-							[
-							],
-							"sublimelinter_executable_map":
-							{
-							},
-							"sublimelinter_fill_outlines": false,
-							"sublimelinter_gutter_marks": false,
-							"sublimelinter_mark_style": "outline",
-							"sublimelinter_notes": false,
-							"sublimelinter_objj_check_ascii": false,
-							"sublimelinter_popup_errors_on_save": false,
-							"sublimelinter_syntax_map":
-							{
-								"C++": "c",
-								"Python Django": "python",
-								"Ruby on Rails": "ruby"
-							},
-							"sublimelinter_wrap_find": true,
-							"syntax": "Packages/PHP/PHP.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 335.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "pos/config-default.php",
-					"settings":
-					{
-						"buffer_size": 516,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								204,
-								204
-							]
-						],
-						"settings":
-						{
-							"annotations":
-							[
-								"TODO",
-								"README",
-								"FIXME"
-							],
-							"csslint_options":
-							{
-								"adjoining-classes": "warning",
-								"box-model": true,
-								"box-sizing": "warning",
-								"compatible-vendor-prefixes": "warning",
-								"display-property-grouping": true,
-								"duplicate-background-images": "warning",
-								"duplicate-properties": true,
-								"empty-rules": true,
-								"errors": true,
-								"fallback-colors": "warning",
-								"floats": "warning",
-								"font-faces": "warning",
-								"font-sizes": "warning",
-								"gradients": "warning",
-								"ids": "warning",
-								"import": "warning",
-								"important": "warning",
-								"known-properties": true,
-								"outline-none": "warning",
-								"overqualified-elements": "warning",
-								"qualified-headings": "warning",
-								"regex-selectors": "warning",
-								"rules-count": "warning",
-								"shorthand": "warning",
-								"star-property-hack": "warning",
-								"text-indent": "warning",
-								"underscore-property-hack": "warning",
-								"unique-headings": "warning",
-								"universal-selector": "warning",
-								"vendor-prefix": true,
-								"zero-units": "warning"
-							},
-							"gjslint_ignore":
-							[
-								110.0
-							],
-							"gjslint_options":
-							[
-							],
-							"javascript_linter": "jshint",
-							"jshint_options":
-							{
-								"browser": true,
-								"evil": true,
-								"regexdash": true,
-								"sub": true,
-								"trailing": true,
-								"wsh": true
-							},
-							"pep8": true,
-							"pep8_ignore":
-							[
-								"E501"
-							],
-							"perl_linter": "perlcritic",
-							"pyflakes_ignore":
-							[
-							],
-							"pyflakes_ignore_import_*": true,
-							"sublimelinter": true,
-							"sublimelinter_delay": 2.0,
-							"sublimelinter_disable":
-							[
-							],
-							"sublimelinter_executable_map":
-							{
-							},
-							"sublimelinter_fill_outlines": false,
-							"sublimelinter_gutter_marks": false,
-							"sublimelinter_mark_style": "outline",
-							"sublimelinter_notes": false,
-							"sublimelinter_objj_check_ascii": false,
-							"sublimelinter_popup_errors_on_save": false,
-							"sublimelinter_syntax_map":
-							{
-								"C++": "c",
-								"Python Django": "python",
-								"Ruby on Rails": "ruby"
-							},
-							"sublimelinter_wrap_find": true,
-							"syntax": "Packages/PHP/PHP.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "pos/page/pins/sales.php",
-					"settings":
-					{
-						"buffer_size": 474,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"annotations":
-							[
-								"TODO",
-								"README",
-								"FIXME"
-							],
-							"csslint_options":
-							{
-								"adjoining-classes": "warning",
-								"box-model": true,
-								"box-sizing": "warning",
-								"compatible-vendor-prefixes": "warning",
-								"display-property-grouping": true,
-								"duplicate-background-images": "warning",
-								"duplicate-properties": true,
-								"empty-rules": true,
-								"errors": true,
-								"fallback-colors": "warning",
-								"floats": "warning",
-								"font-faces": "warning",
-								"font-sizes": "warning",
-								"gradients": "warning",
-								"ids": "warning",
-								"import": "warning",
-								"important": "warning",
-								"known-properties": true,
-								"outline-none": "warning",
-								"overqualified-elements": "warning",
-								"qualified-headings": "warning",
-								"regex-selectors": "warning",
-								"rules-count": "warning",
-								"shorthand": "warning",
-								"star-property-hack": "warning",
-								"text-indent": "warning",
-								"underscore-property-hack": "warning",
-								"unique-headings": "warning",
-								"universal-selector": "warning",
-								"vendor-prefix": true,
-								"zero-units": "warning"
-							},
-							"gjslint_ignore":
-							[
-								110.0
-							],
-							"gjslint_options":
-							[
-							],
-							"javascript_linter": "jshint",
-							"jshint_options":
-							{
-								"browser": true,
-								"evil": true,
-								"regexdash": true,
-								"sub": true,
-								"trailing": true,
-								"wsh": true
-							},
-							"pep8": true,
-							"pep8_ignore":
-							[
-								"E501"
-							],
-							"perl_linter": "perlcritic",
-							"pyflakes_ignore":
-							[
-							],
-							"pyflakes_ignore_import_*": true,
-							"sublimelinter": true,
-							"sublimelinter_delay": 2.0,
-							"sublimelinter_disable":
-							[
-							],
-							"sublimelinter_executable_map":
-							{
-							},
-							"sublimelinter_fill_outlines": false,
-							"sublimelinter_gutter_marks": false,
-							"sublimelinter_mark_style": "outline",
-							"sublimelinter_notes": false,
-							"sublimelinter_objj_check_ascii": false,
-							"sublimelinter_popup_errors_on_save": false,
-							"sublimelinter_syntax_map":
-							{
-								"C++": "c",
-								"Python Django": "python",
-								"Ruby on Rails": "ruby"
-							},
-							"sublimelinter_wrap_find": true,
-							"syntax": "Packages/PHP/PHP.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 4,
-					"file": "pos/page/pins/distributorsales.php",
-					"settings":
-					{
-						"buffer_size": 969,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
+								293,
+								293
 							]
 						],
 						"settings":
@@ -1562,6 +1072,58 @@
 		"selected_items":
 		[
 			[
+				"viewdi",
+				"pos/lib/View/DistributorSalesVoucher.php"
+			],
+			[
+				"pagesale",
+				"pos/page/vouchers/sales.php"
+			],
+			[
+				"modelpos",
+				"admin/lib/Model/Pos.php"
+			],
+			[
+				"adminpagepos",
+				"admin/page/pos.php"
+			],
+			[
+				"usersatkaddautoformfil",
+				"users/atk4-addons/autocomplete/lib/Form/Field/basic.php"
+			],
+			[
+				"modeladmin",
+				"admin/lib/Model/Admin.php"
+			],
+			[
+				"modeldistr",
+				"admin/lib/Model/Distributor.php"
+			],
+			[
+				"pagenewreg",
+				"users/page/newregistration.php"
+			],
+			[
+				"usersatkadformfieldbas",
+				"users/atk4-addons/autocomplete/lib/Form/Field/basic.php"
+			],
+			[
+				"usersconf",
+				"users/config-default.php"
+			],
+			[
+				"modelkit.",
+				"admin/lib/Model/Kit.php"
+			],
+			[
+				"posmodelpin",
+				"pos/lib/Model/Pin.php"
+			],
+			[
+				"modelpin",
+				"admin/lib/Model/Pin.php"
+			],
+			[
 				"pospinsdistribut",
 				"pos/page/pins/distributorsales.php"
 			],
@@ -1624,10 +1186,6 @@
 			[
 				"adminpagekitdash",
 				"admin/page/kit/dashboard.php"
-			],
-			[
-				"adminpagepos",
-				"admin/page/pos.php"
 			],
 			[
 				"adminmodelpos",
@@ -2024,54 +1582,6 @@
 			[
 				"modelbranch",
 				"models/branch.php"
-			],
-			[
-				"modelbala",
-				"models/balancesheet.php"
-			],
-			[
-				"controllerbalance",
-				"controllers/balancesheet_cont.php"
-			],
-			[
-				"modelbranc",
-				"models/branch.php"
-			],
-			[
-				"reportdayb",
-				"views/report/tmpl/daybook.php"
-			],
-			[
-				"pandltransa",
-				"views/report/tmpl/pandl_transactionDetails.php"
-			],
-			[
-				"modelbalance",
-				"models/balancesheet.php"
-			],
-			[
-				"schemecont",
-				"controllers/schemes_cont.php"
-			],
-			[
-				"librj",
-				"libraries/jq.php"
-			],
-			[
-				"search",
-				"controllers/search_cont.php"
-			],
-			[
-				"balanceshett",
-				"controllers/balancesheet_cont.php"
-			],
-			[
-				"check",
-				"helpers/check_helper.php"
-			],
-			[
-				"accountscont",
-				"controllers/accounts_cont.php"
 			]
 		],
 		"width": 0.0
