@@ -6,14 +6,14 @@ class page_admin_closing_newclosing extends page_admin{
         
         $form=$this->add('Form');
         $form->addField('DatePicker','new_closing')->validateNotNull();
-        $form->addField('checkbox','do_royalty');
+        // $form->addField('checkbox','do_royalty');
         $form->addField('checkbox','do_repurchase');
         $btn=$form->addSubmit('Confirm');
         
-        $btn->js('click')->hide();
+        // $btn->js('click')->hide();
 
         if($form->isSubmitted()){
-            
+            $form->js()->univ()->errorMessage("Still not implemented")->execute();
             $this->do_closing($form->get('new_closing'), $form->get('do_royalty'),$form->get('do_repurchase'));
             
             $form->js(null,$form->js()->univ()->successMessage("Closing Done"))->reload()->execute();

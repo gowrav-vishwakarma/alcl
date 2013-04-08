@@ -12,6 +12,7 @@ class Model_Distributor extends Model_Table {
         parent::init();
 
         $this->hasOne("Distributor", "sponsor_id")->display(array('form'=>'autocomplete/basic'));
+        $this->hasOne("Distributor", "introducer_id")->display(array('form'=>'autocomplete/basic'));
         $this->hasOne("Kit", "kit_id");
         $this->hasOne("Pin", "pin_id")->system(true)->display(array('form'=>'autocomplete/basic'));
 
@@ -45,6 +46,8 @@ class Model_Distributor extends Model_Table {
         $this->addField('TotalUpgradationDeduction')->system(true);
         $this->addField('ClosingUpgradationDeduction')->system(true);
         $this->addField('ClosingBV')->system(true);
+        $this->addField('SessionIntroductionAmount')->system(true);
+        $this->addField('TotalIntroductionAmount')->system(true);
 
         $this->hasMany("SponsoredDistributors", "sponsor_id");
         $this->hasMany("Details", "distributor_id");
@@ -90,7 +93,8 @@ class Model_Distributor extends Model_Table {
             $leg['Leg']=$this->recall('leg');
             $leg['downline_id']=$this['id'];
             $leg->save();
-            
+
+
             $pin=$this->ref('pin_id');
             $pin['Used']=true;
             $pin->save();
@@ -105,13 +109,18 @@ class Model_Distributor extends Model_Table {
             
             $this['GreenDate']= ($kit['DefaultGreen']==1 ? date('Y-m-d'): "0000-00-00");
 
-            $mr=$this->add('Model_MillionRewards');
-            $mr['distributor_id']=$this['id'];
-            $mr->save();
+            $introducer=$this->add('Model_Distributor');
+            $introducer->load($this['introducer_id']);
+            $introducer['SessionIntroductionAmount']=$introducer['SessionIntroductionAmount'] + $kit['AmountToIntroducer'];
 
-            $br=$this->add('Model_BillionRewards');
-            $br['distributor_id']=$this['id'];
-            $br->save();
+            $introducer->save();
+            // $mr=$this->add('Model_MillionRewards');
+            // $mr['distributor_id']=$this['id'];
+            // $mr->save();
+
+            // $br=$this->add('Model_BillionRewards');
+            // $br['distributor_id']=$this['id'];
+            // $br->save();
 
         }
 
@@ -144,7 +153,7 @@ class Model_Distributor extends Model_Table {
         $PV = ($PV == null ) ? $kit['PV'] : $PV;
         $BV = ($BV == null ) ? $kit['BV'] : $BV;
         $RP = ($RP == null ) ? $kit['RP'] : $RP;
-        // $IntroAmount = $kit['AmountToIntroducer'];
+        $IntroAmount = $kit['AmountToIntroducer'];
         $Green = $kit['DefaultGreen'];
 
 

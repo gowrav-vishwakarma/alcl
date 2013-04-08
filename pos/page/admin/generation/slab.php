@@ -1,6 +1,6 @@
 <?php
 
-class page_admin_generation_slab extends page_admin{
+class page_admin_generation_slab extends page_admin_planmaster{
 	function init(){
 		parent::init();
 

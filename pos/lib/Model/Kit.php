@@ -1,4 +1,4 @@
-<?php
+// <?php
 
 /*
  * To change this template, choose Tools | Templates
@@ -20,7 +20,7 @@ class Model_Kit extends Model_Table {
         $this->addField('BV');
         $this->addField('PV');
         $this->addField('RP');
-        // $this->addField('AmountToIntroducer');
+        $this->addField('AmountToIntroducer');
         $this->addField('Capping')->caption("Weekly Capping");
         $this->addField('DefaultGreen')->type('boolean')->defaultValue(false);
         $this->addField('DefaultColor')->enum(array('blue','red'))->defaultValue('blue');

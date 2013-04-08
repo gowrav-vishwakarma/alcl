@@ -11,6 +11,6 @@
 // jui - this is theme. Keep it jui unless you want to make your own theme
 error_reporting('E_ALL');
 include 'atk4/loader.php';
-$api=new Frontend('s');
+$api=new Frontend('pos');
 $api->main();
 ?>

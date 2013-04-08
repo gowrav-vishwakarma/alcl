@@ -4,6 +4,14 @@
 		"selected_items":
 		[
 			[
+				"in",
+				"introducer"
+			],
+			[
+				"intr",
+				"introducer_id"
+			],
+			[
 				"text",
 				"text-align"
 			],
@@ -500,10 +508,50 @@
 	"buffers":
 	[
 		{
-			"file": "pos/lib/View/DistributorSalesVoucher.php",
+			"file": "pos/page/admin/planmaster.php",
 			"settings":
 			{
-				"buffer_size": 2836,
+				"buffer_size": 127,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "pos/lib/Frontend.php",
+			"settings":
+			{
+				"buffer_size": 4049,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "pos/lib/Menu/Generation.php",
+			"settings":
+			{
+				"buffer_size": 209,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "pos/page/admin/salarymaster.php",
+			"settings":
+			{
+				"buffer_size": 173,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "pos/lib/Model/SalaryMaster.php",
+			"settings":
+			{
+				"buffer_size": 216,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "pos/page/admin/generation/slab.php",
+			"settings":
+			{
+				"buffer_size": 243,
 				"line_ending": "Unix"
 			}
 		}
@@ -511,7 +559,7 @@
 	"build_system": "",
 	"command_palette":
 	{
-		"height": 369.0,
+		"height": 392.0,
 		"selected_items":
 		[
 			[
@@ -611,7 +659,7 @@
 				"Snippet: Class"
 			]
 		],
-		"width": 593.0
+		"width": 602.0
 	},
 	"console":
 	{
@@ -628,11 +676,59 @@
 	},
 	"file_history":
 	[
+		"/var/www/alcl/pos/page/admin/repurchase.php",
+		"/var/www/alcl/pos/lib/Model/SalaryMaster.php",
+		"/var/www/alcl/users/page/newregistration.php",
+		"/var/www/alcl/pos/lib/Model/Kit.php",
+		"/var/www/alcl/pos/lib/Form/Field/ledger.php",
+		"/var/www/alcl/pos/lib/Menu/Generation.php",
+		"/var/www/alcl/pos/lib/Frontend.php",
+		"/var/www/alcl/pos/lib/Model/Distributor.php",
+		"/var/www/alcl/pos/lib/Model/Model",
+		"/var/www/alcl/pos/lib/Model/Pos.php",
+		"/var/www/alcl/admin/page/repurchase.php",
+		"/var/www/alcl/pos/page/admin/reports.php",
+		"/var/www/alcl/pos/page/reports.php",
+		"/var/www/alcl/pos/lib/Menu/AdminReports.php",
+		"/var/www/alcl/pos/page/admin/reports/mlm.php",
+		"/var/www/alcl/pos/page/admin/distributor.php",
+		"/var/www/alcl/pos/page/admin/closing.php",
+		"/var/www/alcl/pos/page/admin/pin/dashboard.php",
+		"/var/www/alcl/pos/lib/Menu/Products.php",
+		"/var/www/alcl/pos/page/admin/pos.php",
+		"/var/www/alcl/pos/lib/Menu/Pos.php",
+		"/var/www/alcl/pos/page/admin/prd/dsh.php",
+		"/var/www/alcl/pos/page/admin/actemp.php",
+		"/var/www/alcl/lib/Frontend.php",
+		"/var/www/alcl/pos/page/admin/reports/pins.php",
+		"/var/www/alcl/pos/page/admin/reports/ledger.php",
+		"/var/www/alcl/pos/page/admin/reports/kits.php",
+		"/var/www/alcl/pos/page/admin/reports/dashboard.php",
+		"/var/www/alcl/pos/page/admin/distributor/idshift.php",
+		"/var/www/alcl/pos/page/admin/distributor/search.php",
+		"/var/www/alcl/pos/page/admin/distributor/sms.php",
+		"/var/www/alcl/pos/page/admin/generation/slab.php",
+		"/var/www/alcl/pos/page/admin/kit/dashboard.php",
+		"/var/www/alcl/pos/page/admin/pin/changestatus.php",
+		"/var/www/alcl/pos/page/admin/pin/generate.php",
+		"/var/www/alcl/pos/page/admin/pin/search.php",
+		"/var/www/alcl/pos/page/admin/pin/transfer.php",
+		"/var/www/alcl/pos/page/admin/prchs/do.php",
+		"/var/www/alcl/pos/page/admin/prchs/dsh.php",
+		"/var/www/alcl/pos/page/admin/prchs/ordr.php",
+		"/var/www/alcl/pos/page/admin/prd/cat.php",
+		"/var/www/alcl/pos/page/admin/prd/itm.php",
+		"/var/www/alcl/pos/page/admin/prd/prchs.php",
+		"/var/www/alcl/pos/page/admin/prd/prtis.php",
+		"/var/www/alcl/pos/page/admin/reports/mlm/total.php",
+		"/var/www/alcl/pos/page/admin/closing/newclosing.php",
+		"/var/www/alcl/pos/page/admin/closing/details.php",
+		"/var/www/alcl/pos/lib/View/DistributorSalesVoucher.php",
+		"/var/www/alcl/pos/page/admin.php",
 		"/var/www/alcl/pos/page/vouchers/sales.php",
 		"/var/www/alcl/pos/page/pins/distributorsales.php",
 		"/var/www/alcl/admin/lib/Model/Pos.php",
 		"/var/www/alcl/admin/page/pos.php",
-		"/var/www/alcl/users/page/newregistration.php",
 		"/var/www/alcl/pos/config-default.php",
 		"/var/www/alcl/admin/lib/Model/Distributor.php",
 		"/var/www/alcl/pos/atk4-addons/autocomplete/js/autocomplete_univ.js",
@@ -656,7 +752,6 @@
 		"/var/www/alcl/admin/lib/Model/LedgerAll.php",
 		"/var/www/alcl/admin/lib/Model/KitLedgers.php",
 		"/var/www/alcl/admin/lib/Form/Field/ledger.php",
-		"/var/www/alcl/lib/Frontend.php",
 		"/var/www/alcl/page/gallary.html",
 		"/var/www/alcl/page/about.html",
 		"/var/www/alcl/page/contactus.html",
@@ -708,54 +803,7 @@
 		"/var/www/xbank/administrator/components/com_xbank/controllers/xbankschemes/fixedandmis/fixedandmisdaily.php",
 		"/var/www/xbank/administrator/components/com_xbank/controllers/xbankschemes/recurring/recurringmonthly.php",
 		"/var/www/xbank/administrator/components/com_xbank/models/scheme.php",
-		"/var/www/xbank/administrator/components/com_xbank/models/account.php",
-		"/var/www/xbank/administrator/components/com_xbank/controllers/xbankschemes/loan/loandaily.php",
-		"/var/www/xbank/administrator/components/com_xbank/controllers/xbankschemes/cc/ccdaily.php",
-		"/var/www/xbank/administrator/components/com_xbank/controllers/xbankschemes/loan/loanmonthly.php",
-		"/var/www/xbank/administrator/components/com_xbank/helpers/check_helper.php",
-		"/var/www/xbank/administrator/components/com_xbank/controllers/report_2_cont.php",
-		"/home/gowrav/sublime-projects/xbank.sublime-project",
-		"/var/www/xbank/administrator/components/com_xbank/xbank.php",
-		"/home/gowrav/.config/sublime-text-2/Packages/Xdebug/Xdebug.sublime-settings",
-		"/var/www/xbank/administrator/components/com_xbank/libraries/formcomponents.php",
-		"/var/www/xbank/administrator/components/com_xbank/controllers/corrections.php",
-		"/var/www/xbank/administrator/components/com_xbank/controllers/accounts_cont.php",
-		"/var/www/xbank/administrator/components/com_xbank/controllers/xbankschemes/savingandcurrent/savingandcurrenthalfyearly.php",
-		"/var/www/xbank/administrator/components/com_xbank/controllers/xbankschemes/savingandcurrent/savingandcurrentyearly.php",
-		"/var/www/xbank/administrator/components/com_xbank/controllers/xbankschemes/default/defaultaccountopenform.php",
-		"/var/www/xbank/administrator/components/com_xbank/controllers/xbankschemes/dds/ddsaccountopenform.php",
-		"/var/www/xbank/administrator/components/com_xbank/controllers/member_cont.php",
-		"/var/www/sr/templates/gk_restaurant/lib/gk.framework.php",
-		"/var/www/sr/templates/gk_restaurant/css/template.css",
-		"/var/www/sr/templates/gk_restaurant/index.php",
-		"/var/www/xbank/administrator/components/com_xbank/controllers/xbankschemes/moneyback/moneybackyearly.php",
-		"/var/www/xbank/atk/templates/default/shared.html",
-		"/var/www/xbank/atk/lib/Frontend.php",
-		"/var/www/xbank/administrator/components/com_xbank/helpers/toolbar_helper.php",
-		"/var/www/xbank/administrator/components/com_xbank/controllers/inventory_cont.php",
-		"/var/www/xbank/administrator/components/com_xbank/libraries/jq.php",
-		"/var/www/xbank/administrator/components/com_xbank/controllers/staff_cont.php",
-		"/var/www/accurate/templates/modern_flavor/css/template.css",
-		"/var/www/xbank/administrator/components/com_xbank/models/transaction.php",
-		"/var/www/xbank/administrator/components/com_xbank/views/report/tmpl/accountstatement.php",
-		"/var/www/xbank/configuration.php",
-		"/var/www/xbank/administrator/components/com_xbank/controllers/agent_cont.php",
-		"/var/www/xbank/administrator/components/com_xbank/controllers/branch_cont.php",
-		"/var/www/xbank/administrator/components/com_xbank/views/branch/tmpl/default.php",
-		"/var/www/xbank/administrator/components/com_xbank/views/report/tmpl/rdpremiumduelist.php",
-		"/var/www/xbank/administrator/components/com_xbank/controllers/com_xbank.php",
-		"/var/www/xbank/administrator/components/com_xbank/controllers/customreport_cont.php",
-		"/var/www/xbank/administrator/components/com_xbank/views/report/tmpl/pandl_accountTransactions.php",
-		"/var/www/xbank/administrator/components/com_xbank/views/report/tmpl/loan.php",
-		"/home/gowrav/testgame2/index.html",
-		"/home/gowrav/testgame/index.html",
-		"/var/www/xbank/administrator/components/com_xbank/views/balancesheet/tmpl/balancesheet.php",
-		"/var/www/xbank/administrator/components/com_xbank/views/report/tmpl/pandl_transactionDetails.php",
-		"/var/www/xbank/administrator/components/com_xbank/views/report/tmpl/daybook.php",
-		"/var/www/xbank/administrator/components/com_xbank/views/balancesheet/tmpl/head_row.php",
-		"/var/www/xbank/administrator/components/com_xbank/models/branch.php",
-		"/var/www/xbank/administrator/components/com_xbank/models/balancesheet.php",
-		"/var/www/xbank/administrator/components/com_xbank/controllers/search_cont.php"
+		"/var/www/xbank/administrator/components/com_xbank/models/account.php"
 	],
 	"find":
 	{
@@ -779,6 +827,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"page_admin_distributor",
 			"autocomplete",
 			"famil",
 			"This is your first",
@@ -901,23 +950,137 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 5,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "pos/lib/View/DistributorSalesVoucher.php",
+					"file": "pos/page/admin/planmaster.php",
 					"settings":
 					{
-						"buffer_size": 2836,
+						"buffer_size": 127,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								293,
-								293
+								33,
+								33
+							]
+						],
+						"settings":
+						{
+							"annotations":
+							[
+								"TODO",
+								"README",
+								"FIXME"
+							],
+							"csslint_options":
+							{
+								"adjoining-classes": "warning",
+								"box-model": true,
+								"box-sizing": "warning",
+								"compatible-vendor-prefixes": "warning",
+								"display-property-grouping": true,
+								"duplicate-background-images": "warning",
+								"duplicate-properties": true,
+								"empty-rules": true,
+								"errors": true,
+								"fallback-colors": "warning",
+								"floats": "warning",
+								"font-faces": "warning",
+								"font-sizes": "warning",
+								"gradients": "warning",
+								"ids": "warning",
+								"import": "warning",
+								"important": "warning",
+								"known-properties": true,
+								"outline-none": "warning",
+								"overqualified-elements": "warning",
+								"qualified-headings": "warning",
+								"regex-selectors": "warning",
+								"rules-count": "warning",
+								"shorthand": "warning",
+								"star-property-hack": "warning",
+								"text-indent": "warning",
+								"underscore-property-hack": "warning",
+								"unique-headings": "warning",
+								"universal-selector": "warning",
+								"vendor-prefix": true,
+								"zero-units": "warning"
+							},
+							"gjslint_ignore":
+							[
+								110.0
+							],
+							"gjslint_options":
+							[
+							],
+							"javascript_linter": "jshint",
+							"jshint_options":
+							{
+								"browser": true,
+								"evil": true,
+								"regexdash": true,
+								"sub": true,
+								"trailing": true,
+								"wsh": true
+							},
+							"pep8": true,
+							"pep8_ignore":
+							[
+								"E501"
+							],
+							"perl_linter": "perlcritic",
+							"pyflakes_ignore":
+							[
+							],
+							"pyflakes_ignore_import_*": true,
+							"sublimelinter": true,
+							"sublimelinter_delay": 2.0,
+							"sublimelinter_disable":
+							[
+							],
+							"sublimelinter_executable_map":
+							{
+							},
+							"sublimelinter_fill_outlines": false,
+							"sublimelinter_gutter_marks": false,
+							"sublimelinter_mark_style": "outline",
+							"sublimelinter_notes": false,
+							"sublimelinter_objj_check_ascii": false,
+							"sublimelinter_popup_errors_on_save": false,
+							"sublimelinter_syntax_map":
+							{
+								"C++": "c",
+								"Python Django": "python",
+								"Ruby on Rails": "ruby"
+							},
+							"sublimelinter_wrap_find": true,
+							"syntax": "Packages/PHP/PHP.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "pos/lib/Frontend.php",
+					"settings":
+					{
+						"buffer_size": 4049,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2491,
+								2491
 							]
 						],
 						"settings":
@@ -1011,7 +1174,464 @@
 							},
 							"sublimelinter_wrap_find": true,
 							"syntax": "Packages/PHP/PHP.tmLanguage",
-							"translate_tabs_to_spaces": false
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 694.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "pos/lib/Menu/Generation.php",
+					"settings":
+					{
+						"buffer_size": 209,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								201,
+								201
+							]
+						],
+						"settings":
+						{
+							"annotations":
+							[
+								"TODO",
+								"README",
+								"FIXME"
+							],
+							"csslint_options":
+							{
+								"adjoining-classes": "warning",
+								"box-model": true,
+								"box-sizing": "warning",
+								"compatible-vendor-prefixes": "warning",
+								"display-property-grouping": true,
+								"duplicate-background-images": "warning",
+								"duplicate-properties": true,
+								"empty-rules": true,
+								"errors": true,
+								"fallback-colors": "warning",
+								"floats": "warning",
+								"font-faces": "warning",
+								"font-sizes": "warning",
+								"gradients": "warning",
+								"ids": "warning",
+								"import": "warning",
+								"important": "warning",
+								"known-properties": true,
+								"outline-none": "warning",
+								"overqualified-elements": "warning",
+								"qualified-headings": "warning",
+								"regex-selectors": "warning",
+								"rules-count": "warning",
+								"shorthand": "warning",
+								"star-property-hack": "warning",
+								"text-indent": "warning",
+								"underscore-property-hack": "warning",
+								"unique-headings": "warning",
+								"universal-selector": "warning",
+								"vendor-prefix": true,
+								"zero-units": "warning"
+							},
+							"gjslint_ignore":
+							[
+								110.0
+							],
+							"gjslint_options":
+							[
+							],
+							"javascript_linter": "jshint",
+							"jshint_options":
+							{
+								"browser": true,
+								"evil": true,
+								"regexdash": true,
+								"sub": true,
+								"trailing": true,
+								"wsh": true
+							},
+							"pep8": true,
+							"pep8_ignore":
+							[
+								"E501"
+							],
+							"perl_linter": "perlcritic",
+							"pyflakes_ignore":
+							[
+							],
+							"pyflakes_ignore_import_*": true,
+							"sublimelinter": true,
+							"sublimelinter_delay": 2.0,
+							"sublimelinter_disable":
+							[
+							],
+							"sublimelinter_executable_map":
+							{
+							},
+							"sublimelinter_fill_outlines": false,
+							"sublimelinter_gutter_marks": false,
+							"sublimelinter_mark_style": "outline",
+							"sublimelinter_notes": false,
+							"sublimelinter_objj_check_ascii": false,
+							"sublimelinter_popup_errors_on_save": false,
+							"sublimelinter_syntax_map":
+							{
+								"C++": "c",
+								"Python Django": "python",
+								"Ruby on Rails": "ruby"
+							},
+							"sublimelinter_wrap_find": true,
+							"syntax": "Packages/PHP/PHP.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "pos/page/admin/salarymaster.php",
+					"settings":
+					{
+						"buffer_size": 173,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								65,
+								65
+							]
+						],
+						"settings":
+						{
+							"annotations":
+							[
+								"TODO",
+								"README",
+								"FIXME"
+							],
+							"csslint_options":
+							{
+								"adjoining-classes": "warning",
+								"box-model": true,
+								"box-sizing": "warning",
+								"compatible-vendor-prefixes": "warning",
+								"display-property-grouping": true,
+								"duplicate-background-images": "warning",
+								"duplicate-properties": true,
+								"empty-rules": true,
+								"errors": true,
+								"fallback-colors": "warning",
+								"floats": "warning",
+								"font-faces": "warning",
+								"font-sizes": "warning",
+								"gradients": "warning",
+								"ids": "warning",
+								"import": "warning",
+								"important": "warning",
+								"known-properties": true,
+								"outline-none": "warning",
+								"overqualified-elements": "warning",
+								"qualified-headings": "warning",
+								"regex-selectors": "warning",
+								"rules-count": "warning",
+								"shorthand": "warning",
+								"star-property-hack": "warning",
+								"text-indent": "warning",
+								"underscore-property-hack": "warning",
+								"unique-headings": "warning",
+								"universal-selector": "warning",
+								"vendor-prefix": true,
+								"zero-units": "warning"
+							},
+							"gjslint_ignore":
+							[
+								110.0
+							],
+							"gjslint_options":
+							[
+							],
+							"javascript_linter": "jshint",
+							"jshint_options":
+							{
+								"browser": true,
+								"evil": true,
+								"regexdash": true,
+								"sub": true,
+								"trailing": true,
+								"wsh": true
+							},
+							"pep8": true,
+							"pep8_ignore":
+							[
+								"E501"
+							],
+							"perl_linter": "perlcritic",
+							"pyflakes_ignore":
+							[
+							],
+							"pyflakes_ignore_import_*": true,
+							"sublimelinter": true,
+							"sublimelinter_delay": 2.0,
+							"sublimelinter_disable":
+							[
+							],
+							"sublimelinter_executable_map":
+							{
+							},
+							"sublimelinter_fill_outlines": false,
+							"sublimelinter_gutter_marks": false,
+							"sublimelinter_mark_style": "outline",
+							"sublimelinter_notes": false,
+							"sublimelinter_objj_check_ascii": false,
+							"sublimelinter_popup_errors_on_save": false,
+							"sublimelinter_syntax_map":
+							{
+								"C++": "c",
+								"Python Django": "python",
+								"Ruby on Rails": "ruby"
+							},
+							"sublimelinter_wrap_find": true,
+							"syntax": "Packages/PHP/PHP.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "pos/lib/Model/SalaryMaster.php",
+					"settings":
+					{
+						"buffer_size": 216,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								30,
+								30
+							]
+						],
+						"settings":
+						{
+							"annotations":
+							[
+								"TODO",
+								"README",
+								"FIXME"
+							],
+							"csslint_options":
+							{
+								"adjoining-classes": "warning",
+								"box-model": true,
+								"box-sizing": "warning",
+								"compatible-vendor-prefixes": "warning",
+								"display-property-grouping": true,
+								"duplicate-background-images": "warning",
+								"duplicate-properties": true,
+								"empty-rules": true,
+								"errors": true,
+								"fallback-colors": "warning",
+								"floats": "warning",
+								"font-faces": "warning",
+								"font-sizes": "warning",
+								"gradients": "warning",
+								"ids": "warning",
+								"import": "warning",
+								"important": "warning",
+								"known-properties": true,
+								"outline-none": "warning",
+								"overqualified-elements": "warning",
+								"qualified-headings": "warning",
+								"regex-selectors": "warning",
+								"rules-count": "warning",
+								"shorthand": "warning",
+								"star-property-hack": "warning",
+								"text-indent": "warning",
+								"underscore-property-hack": "warning",
+								"unique-headings": "warning",
+								"universal-selector": "warning",
+								"vendor-prefix": true,
+								"zero-units": "warning"
+							},
+							"gjslint_ignore":
+							[
+								110.0
+							],
+							"gjslint_options":
+							[
+							],
+							"javascript_linter": "jshint",
+							"jshint_options":
+							{
+								"browser": true,
+								"evil": true,
+								"regexdash": true,
+								"sub": true,
+								"trailing": true,
+								"wsh": true
+							},
+							"pep8": true,
+							"pep8_ignore":
+							[
+								"E501"
+							],
+							"perl_linter": "perlcritic",
+							"pyflakes_ignore":
+							[
+							],
+							"pyflakes_ignore_import_*": true,
+							"sublimelinter": true,
+							"sublimelinter_delay": 2.0,
+							"sublimelinter_disable":
+							[
+							],
+							"sublimelinter_executable_map":
+							{
+							},
+							"sublimelinter_fill_outlines": false,
+							"sublimelinter_gutter_marks": false,
+							"sublimelinter_mark_style": "outline",
+							"sublimelinter_notes": false,
+							"sublimelinter_objj_check_ascii": false,
+							"sublimelinter_popup_errors_on_save": false,
+							"sublimelinter_syntax_map":
+							{
+								"C++": "c",
+								"Python Django": "python",
+								"Ruby on Rails": "ruby"
+							},
+							"sublimelinter_wrap_find": true,
+							"syntax": "Packages/PHP/PHP.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "pos/page/admin/generation/slab.php",
+					"settings":
+					{
+						"buffer_size": 243,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								69,
+								69
+							]
+						],
+						"settings":
+						{
+							"annotations":
+							[
+								"TODO",
+								"README",
+								"FIXME"
+							],
+							"csslint_options":
+							{
+								"adjoining-classes": "warning",
+								"box-model": true,
+								"box-sizing": "warning",
+								"compatible-vendor-prefixes": "warning",
+								"display-property-grouping": true,
+								"duplicate-background-images": "warning",
+								"duplicate-properties": true,
+								"empty-rules": true,
+								"errors": true,
+								"fallback-colors": "warning",
+								"floats": "warning",
+								"font-faces": "warning",
+								"font-sizes": "warning",
+								"gradients": "warning",
+								"ids": "warning",
+								"import": "warning",
+								"important": "warning",
+								"known-properties": true,
+								"outline-none": "warning",
+								"overqualified-elements": "warning",
+								"qualified-headings": "warning",
+								"regex-selectors": "warning",
+								"rules-count": "warning",
+								"shorthand": "warning",
+								"star-property-hack": "warning",
+								"text-indent": "warning",
+								"underscore-property-hack": "warning",
+								"unique-headings": "warning",
+								"universal-selector": "warning",
+								"vendor-prefix": true,
+								"zero-units": "warning"
+							},
+							"gjslint_ignore":
+							[
+								110.0
+							],
+							"gjslint_options":
+							[
+							],
+							"javascript_linter": "jshint",
+							"jshint_options":
+							{
+								"browser": true,
+								"evil": true,
+								"regexdash": true,
+								"sub": true,
+								"trailing": true,
+								"wsh": true
+							},
+							"pep8": true,
+							"pep8_ignore":
+							[
+								"E501"
+							],
+							"perl_linter": "perlcritic",
+							"pyflakes_ignore":
+							[
+							],
+							"pyflakes_ignore_import_*": true,
+							"sublimelinter": true,
+							"sublimelinter_delay": 2.0,
+							"sublimelinter_disable":
+							[
+							],
+							"sublimelinter_executable_map":
+							{
+							},
+							"sublimelinter_fill_outlines": false,
+							"sublimelinter_gutter_marks": false,
+							"sublimelinter_mark_style": "outline",
+							"sublimelinter_notes": false,
+							"sublimelinter_objj_check_ascii": false,
+							"sublimelinter_popup_errors_on_save": false,
+							"sublimelinter_syntax_map":
+							{
+								"C++": "c",
+								"Python Django": "python",
+								"Ruby on Rails": "ruby"
+							},
+							"sublimelinter_wrap_find": true,
+							"syntax": "Packages/PHP/PHP.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -1072,16 +1692,60 @@
 		"selected_items":
 		[
 			[
+				"modelsa",
+				"pos/lib/Model/SalaryMaster.php"
+			],
+			[
+				"pageadminrepu",
+				"pos/page/admin/repurchase.php"
+			],
+			[
+				"modekit.",
+				"pos/lib/Model/Kit.php"
+			],
+			[
+				"modedis",
+				"pos/lib/Model/Distributor.php"
+			],
+			[
+				"mdeldistr",
+				"pos/lib/Model/Distributor.php"
+			],
+			[
+				"modeldistrib",
+				"pos/lib/Model/Distributor.php"
+			],
+			[
+				"userpagenewre",
+				"users/page/newregistration.php"
+			],
+			[
+				"modelki",
+				"pos/lib/Model/Kit.php"
+			],
+			[
+				"modelpos",
+				"pos/lib/Model/Pos.php"
+			],
+			[
+				"posmenuge",
+				"pos/lib/Menu/Generation.php"
+			],
+			[
+				"posfr",
+				"pos/lib/Frontend.php"
+			],
+			[
+				"poslibmepo",
+				"pos/lib/Menu/Pos.php"
+			],
+			[
 				"viewdi",
 				"pos/lib/View/DistributorSalesVoucher.php"
 			],
 			[
 				"pagesale",
 				"pos/page/vouchers/sales.php"
-			],
-			[
-				"modelpos",
-				"admin/lib/Model/Pos.php"
 			],
 			[
 				"adminpagepos",
@@ -1538,50 +2202,6 @@
 			[
 				"modelaccount",
 				"models/account.php"
-			],
-			[
-				"report/loa",
-				"views/report/tmpl/loan.php"
-			],
-			[
-				"custom",
-				"controllers/customreport_cont.php"
-			],
-			[
-				"pandltra",
-				"views/report/tmpl/pandl_accountTransactions.php"
-			],
-			[
-				"balancesheet",
-				"controllers/balancesheet_cont.php"
-			],
-			[
-				"balance",
-				"controllers/balancesheet_cont.php"
-			],
-			[
-				"checkhelp",
-				"helpers/check_helper.php"
-			],
-			[
-				"modeltransa",
-				"models/transaction.php"
-			],
-			[
-				"pandtransa",
-				"views/report/tmpl/pandl_transactionDetails.php"
-			],
-			[
-				"reportday",
-				"views/report/tmpl/daybook.php"
-			],
-			[
-				"headrow",
-				"views/balancesheet/tmpl/head_row.php"
-			],
-			[
-				"modelbranch",
-				"models/branch.php"
 			]
 		],
 		"width": 0.0
@@ -1591,6 +2211,10 @@
 		"height": 500.0,
 		"selected_items":
 		[
+			[
+				"svadm",
+				"/home/gowrav/sublime-projects/svadmin.sublime-project"
+			],
 			[
 				"sv",
 				"/home/gowrav/sublime-projects/svadmin.sublime-project"
@@ -1618,10 +2242,6 @@
 			[
 				"bvmss",
 				"/home/gowrav/sublime-projects/bvmsss.sublime-project"
-			],
-			[
-				"svadm",
-				"/home/gowrav/sublime-projects/svadmin.sublime-project"
 			],
 			[
 				"gift3",

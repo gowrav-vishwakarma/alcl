@@ -1,6 +1,6 @@
 <?php
 
-class Form_Field_Ledger extends Form_Field_DropDown /*autocomplete\Form_Field_plus*/ {
+class Form_Field_Ledger extends autocomplete\Form_Field_plus {
 
     function init(){
         parent::init();
