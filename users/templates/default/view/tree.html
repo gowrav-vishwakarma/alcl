@@ -1,4 +1,12 @@
 <script language="JavaScript" type="text/javascript">
+    $(function() {
+        $( document ).tooltip({
+            content: function () {
+              return $(this).prop('title');
+            }
+        });
+    });
+
     function treeModify(ID){
         if(ID!=0 && ID > 0){
             document.getElementById("Start").value=ID;
@@ -10,8 +18,8 @@
 <script type="text/javascript"  language=javascript>
     mytree = new dTree('mytree','images/treeimg/');
 
-    function addNode(id,parent_id,text,color){
-        mytree.add(id, parent_id, text, 'javascript:treeModify('+id+')', 'detailes of true', '', 'images/treeimg/'+color,'images/treeimg/'+color,'','details name');
+    function addNode(id,parent_id,text,color,details){
+        mytree.add(id, parent_id, text, 'javascript:treeModify('+id+')', details, '', 'images/treeimg/'+color,'images/treeimg/'+color,'','details name');
     }
 
     function displayTree(){

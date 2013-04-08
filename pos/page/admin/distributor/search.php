@@ -16,40 +16,41 @@ class page_admin_distributor_search extends page_admin {
 											)
 										)->execute();
 		}
-                $d=$this->add('Model_Distributor');
-                $form=$this->add('Form');
-                $form->addField('autocomplete/basic','distributor_id')->mustMatch()->setModel($d);
-                $form->addField('autocomplete/basic','kit')->mustMatch()->setModel("Kit");
-                $form->addField('line','Name');
+		
+        $d=$this->add('Model_Distributor');
+        $form=$this->add('Form');
+        $form->addField('autocomplete/basic','distributor_id')->mustMatch()->setModel($d);
+        $form->addField('autocomplete/basic','kit')->mustMatch()->setModel("Kit");
+        $form->addField('line','Name');
 //                $form->addField('autocomplete/basic','adcrd_id')->mustMatch()->setModel($d);
-                $form->addField('autocomplete/basic','Under_id')->mustMatch()->setModel($d);
-                $form->addField('line','Address');
-                $form->addField('line','Pan_no');
-                $form->addField('line','Mobile_no');
-                $form->addField('DatePicker','joining_date');
-                $form->addSubmit('Search');
+        $form->addField('autocomplete/basic','Under_id')->mustMatch()->setModel($d);
+        $form->addField('line','Address');
+        $form->addField('line','Pan_no');
+        $form->addField('line','Mobile_no');
+        $form->addField('DatePicker','joining_date');
+        $form->addSubmit('Search');
 
 		$d=$this->add('Model_Distributor');	
                 
-                if($_GET['filter']){
-                    if($_GET['distributor_id']) $d->addCondition('id',$_GET['distributor_id']);
-                    
-                    if($_GET['Name']) $d->addCondition("name",'like', '%'.$_GET['Name'].'%');
-                    
+        if($_GET['filter']){
+            if($_GET['distributor_id']) $d->addCondition('id',$_GET['distributor_id']);
+            
+            if($_GET['Name']) $d->addCondition("name",'like', '%'.$_GET['Name'].'%');
+            
 //                    if($_GET['adcrd']) $d->addCondition('adcrd_id',$_GET['adcrd']);
-                    
-                    if($_GET['kit']) $d->addCondition('kit_id',$_GET['kit']);
-                    
-                    if($_GET['Address']) $d->addCondition('Address','like','%'. $_GET['Address'].'%');
-                    
-                    if($_GET['Pan_no']) $d->addCondition('PanNo','like','%'.$_GET['Pan_no'].'%');
-                    
-                    if($_GET['Mobile_no']) $d->addCondition('MobileNo','like','%'.$_GET['Mobile_no'].'%');
-                    
-                    if($_GET['joining_date']) $d->addCondition('JoiningDate','>=', $_GET['joining_date']);
-                   
+            
+            if($_GET['kit']) $d->addCondition('kit_id',$_GET['kit']);
+            
+            if($_GET['Address']) $d->addCondition('Address','like','%'. $_GET['Address'].'%');
+            
+            if($_GET['Pan_no']) $d->addCondition('PanNo','like','%'.$_GET['Pan_no'].'%');
+            
+            if($_GET['Mobile_no']) $d->addCondition('MobileNo','like','%'.$_GET['Mobile_no'].'%');
+            
+            if($_GET['joining_date']) $d->addCondition('JoiningDate','>=', $_GET['joining_date']);
+           
 //                    $d->debug();
-                }
+        }
                 
 		$grid=$this->add('Grid');
 		$grid->setModel($d,array('name','sponsor_id','kit','JoiningDate','Address','MobileNo','PanNo'));
@@ -59,19 +60,19 @@ class page_admin_distributor_search extends page_admin {
 		$grid->addColumn('Button','edit_id','Edit');
 		$grid->addColumn('Button','payment_did','Payments');
                 
-                if($form->isSubmitted()){
-                    
-                    $grid->js()->reload(array("distributor_id"=>$form->get("distributor_id"),
-                                                "kit"=>$form->get("kit"),
-                                                  "Name"=>$form->get("Name"),    
-                                                    "Under_id"=>$form->get("Under_id"),
-                                                    "Address"=>$form->get("Address"),
-                                                    "Pan_no"=>$form->get("Pan_no"),
-                                                    "Mobile_no"=>$form->get("Mobile_no"),
-                                                    "joining_date"=>$form->get("joining_date"),
-                                                    "filter"=>1
-                                                ))->execute();
-                }
+        if($form->isSubmitted()){
+            
+            $grid->js()->reload(array("distributor_id"=>$form->get("distributor_id"),
+                                        "kit"=>$form->get("kit"),
+                                          "Name"=>$form->get("Name"),    
+                                            "Under_id"=>$form->get("Under_id"),
+                                            "Address"=>$form->get("Address"),
+                                            "Pan_no"=>$form->get("Pan_no"),
+                                            "Mobile_no"=>$form->get("Mobile_no"),
+                                            "joining_date"=>$form->get("joining_date"),
+                                            "filter"=>1
+                                        ))->execute();
+        }
 
 	}
 

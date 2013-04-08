@@ -31,16 +31,16 @@ class View_Tree extends View{
 			$total_b = $leg_right['TotalGreenCount'];
 		}
 
-		$this->js(true,"addNode($id,$parent_id,'".$m['name']." [".$m['inLeg']."] .. [($total_a)$sess_a : ($total_b)$sess_b] .. []', '$clr')");
+		$this->js(true,"addNode($id,$parent_id,'".$m['name']."', '$clr','this is details from php')");
 		if($m['left_id'] <> null)
 			$this->drawNode($id,$m['left_id'],$depth-1);
 		else if($depth-1 > 0)
-			$this->js(true,"addNode(-${id}0001,$id,'A','question.gif')");
+			$this->js(true,"addNode(-${id}0001,$id,'A','question.gif','Empty Position')");
 
 		if($m['right_id'] <> null)
 			$this->drawNode($id,$m['right_id'],$depth-1);
 		else if($depth-1 > 0)
-			$this->js(true,"addNode(-${id}0002,$id,'B','question.gif')");
+			$this->js(true,"addNode(-${id}0002,$id,'B','question.gif','Empty Position')");
 
 		$m->unload();
 		$m->destroy();

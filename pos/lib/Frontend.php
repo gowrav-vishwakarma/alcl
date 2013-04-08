@@ -58,6 +58,7 @@ class Frontend extends ApiFrontend {
             ->addMenuItem('admin_prd_dsh','Product Mng')//ADMIN
             ->addMenuItem('admin_actemp','Accounts Top')//ADMIN
             ->addMenuItem('admin_distributor','Distributors')//ADMIN
+            ->addMenuItem('admin_distributor_treeview','Tree View')//ADMIN
             ->addMenuItem('admin_closing','Closing')//ADMIN
             ->addMenuItem('admin_planmaster','Plan Master')//ADMIN
             ;

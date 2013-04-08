@@ -49,9 +49,9 @@ class Frontend extends ApiFrontend {
         // it and place in a separate class
         $this->add('Menu',null,'Menu')
             ->addMenuItem('index','Welcome')
-            ->addMenuItem('sessionview','Sessions')
+            ->addMenuItem('sessionview','Week Sessions')
             ->addMenuItem('statements','Closings')
-            ->addMenuItem('rewards','Rewards')
+            // ->addMenuItem('rewards','Rewards')
             ->addMenuItem('downlineview','Downline View')
             ->addMenuItem('treeview','Tree View')
             ->addMenuItem('pinmanager','Pins/Kits Management')
@@ -59,6 +59,14 @@ class Frontend extends ApiFrontend {
             ->addMenuItem('newregistration','New Registration')
             ->addMenuItem('logout')
             ;
+        // $menu = $this->add('View_DropButton')->usemenu();
+        // $flyout=$menu->add('View_Flyout');
+        // $submenu=$flyout->add('Menu_jUI');
+
+        // $menu->addMenuItem($flyout->showJS('#'.$menu->name.'_i'.count($menu->items)),'Sub-Menu');
+
+        // $submenu->addMenuItem('item1');
+        // $submenu->addMenuItem('item2');
 
         $this->addLayout('UserMenu');
         $this->add('H1',null,'logo')->set('Welcome ' . $this->auth->model['name']);

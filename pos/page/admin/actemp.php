@@ -16,7 +16,7 @@ class page_admin_actemp extends page_admin {
         
         $gtab=$tabs->addTab("Groups");
         $gc=$gtab->add("CRUD");
-        $gc->setModel('GroupsAll',array('id','name','head','group'));
+        $gc->setModel('GroupsAll',array('id','name','head','group_id'));
         if($gc->form){
             $gc->form->getElement('group_id')->setEmptyText("Root Group");
         }
