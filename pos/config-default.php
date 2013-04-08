@@ -14,5 +14,7 @@ $config['url_prefix']='?page=';
 #
 #  http://www.atk4.com/doc/config
 
+// Test change for checkout branch
+
 define ('DISCOUNT_GIVEN','Discount Allowed');
 define ('DISCOUNT_TAKEN','Discount Received');
