@@ -16,3 +16,9 @@
 [submodule "users/atk4-addons/autocomplete"]
 	path = users/atk4-addons/autocomplete
 	url = https://github.com/atk4/autocomplete.git
+[submodule "pos/xavoc-addons"]
+	path = pos/xavoc-addons
+	url = https://github.com/xavocinternational/xavoc-addons.git
+[submodule "users/xavoc-addons"]
+	path = users/xavoc-addons
+	url = https://github.com/xavocinternational/xavoc-addons.git
