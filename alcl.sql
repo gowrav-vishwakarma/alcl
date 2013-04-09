@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generation Time: Apr 07, 2013 at 01:41 PM
+-- Generation Time: Apr 09, 2013 at 03:51 PM
 -- Server version: 5.5.28
 -- PHP Version: 5.3.10-1ubuntu3.5
 
@@ -598,8 +598,8 @@ CREATE TABLE IF NOT EXISTS `jos_xtreedetails` (
 --
 
 INSERT INTO `jos_xtreedetails` (`id`, `sponsor_id`, `introducer_id`, `pin_id`, `kit_id`, `adcrd_id`, `PV`, `BV`, `RP`, `SessionPairPV`, `MidSessionPairPV`, `ClosingPairPV`, `TotalPairPV`, `SessionPairBV`, `MidSessionBV`, `ClosingBV`, `TotalBV`, `SessionPairRP`, `MidSessionPairRP`, `ClosingPairRP`, `TotalPairRP`, `SessionIntros`, `SessionIntroductionAmount`, `MidSessionIntros`, `ClosingIntros`, `TotalIntroduces`, `TotalIntroductionAmount`, `SessionGreenCount`, `MidSessionGreenCount`, `ClosingGreenCount`, `TotalGreenCount`, `SessionCount`, `MidSessionCount`, `ClosingCount`, `TotalCount`, `LastClosingCarryAmount`, `IntroductionIncome`, `BinaryIncomeFromIntrosShare`, `RMB`, `LevelIncome1`, `LevelIncome2`, `LevelIncome3`, `LevelIncome4`, `LevelIncome5`, `LevelIncome6`, `LevelIncome7`, `LevelIncome8`, `LevelIncome9`, `LevelIncome10`, `RoyaltyIncome`, `SurveyIncome`, `ClosingAmount`, `TotalClosingAmount`, `ClosingTDSAmount`, `TotalTDSAmount`, `ClosingServiceCharge`, `OtherDeductions`, `ClosingUpgradationDeduction`, `TotalUpgradationDeduction`, `OtherDeductionRemarks`, `FirstPayoutDeduction`, `ClosingAmountNet`, `ClosingCarriedAmount`, `Path`, `GreenDate`, `Counted`, `SessionNewJoining`, `MidSessionNewJoining`, `ClosingNewJoining`, `JoiningDate`, `jid`, `published`, `temp1`) VALUES
-(1, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0.00, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, NULL, 0, 0, 0, '', '0000-00-00', 0, 0, 0, 0, '2013-04-01', NULL, 1, 0),
-(111561, 1, 0, 111561, 1, 1, 20, 50, 0, 0, 0, 0, 0, 0, 0, 0.00, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, NULL, 0, 0, 0, 'A', '0000-00-00', 0, 0, 0, 0, '2013-04-06', NULL, 1, 0);
+(1, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0.00, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, NULL, 0, 0, 0, '0', '0000-00-00', 0, 0, 0, 0, '2013-04-01', NULL, 1, 0),
+(111561, 1, 0, 111561, 1, 1, 20, 50, 0, 0, 0, 0, 0, 0, 0, 0.00, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, NULL, 0, 0, 0, '0A', '0000-00-00', 0, 0, 0, 0, '2013-04-06', NULL, 1, 0);
 
 -- --------------------------------------------------------
 
@@ -860,6 +860,20 @@ CREATE TABLE IF NOT EXISTS `jos_xxpos` (
 INSERT INTO `jos_xxpos` (`id`, `name`, `owner_id`, `type`, `ledger_id`) VALUES
 (1, 'COMPANY POS', 1, 'Company', 1),
 (2, 'udr1', 1, 'Retailer', 16);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `jos_xxsalarymaster`
+--
+
+CREATE TABLE IF NOT EXISTS `jos_xxsalarymaster` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `Pairs` int(11) NOT NULL,
+  `Amount` int(11) NOT NULL,
+  `Months` int(11) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
 
 -- --------------------------------------------------------
 
