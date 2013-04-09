@@ -1,0 +1,12 @@
+[submodule "users/atk4"]
+	path = users/atk4
+	url = https://github.com/atk4/atk4.git
+[submodule "users/atk4-addons"]
+	path = users/atk4-addons
+	url = https://github.com/atk4/atk4-addons.git
+[submodule "pos/atk4"]
+	path = pos/atk4
+	url = https://github.com/atk4/atk4.git
+[submodule "pos/atk4-addons"]
+	path = pos/atk4-addons
+	url = https://github.com/atk4/atk4-addons.git
