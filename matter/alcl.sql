@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generation Time: Apr 09, 2013 at 03:51 PM
+-- Generation Time: Apr 10, 2013 at 12:05 AM
 -- Server version: 5.5.28
 -- PHP Version: 5.3.10-1ubuntu3.5
 
@@ -19,6 +19,17 @@ SET time_zone = "+00:00";
 --
 -- Database: `alcl`
 --
+
+DELIMITER $$
+--
+-- Procedures
+--
+CREATE DEFINER=`root`@`localhost` PROCEDURE `test_func`()
+BEGIN
+    SELECT 'Hello World';
+END$$
+
+DELIMITER ;
 
 -- --------------------------------------------------------
 
