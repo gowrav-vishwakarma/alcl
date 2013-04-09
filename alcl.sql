@@ -20,17 +20,6 @@ SET time_zone = "+00:00";
 -- Database: `alcl`
 --
 
-DELIMITER $$
---
--- Procedures
---
-CREATE DEFINER=`root`@`localhost` PROCEDURE `test_func`()
-BEGIN
-    SELECT 'Hello World';
-END$$
-
-DELIMITER ;
-
 -- --------------------------------------------------------
 
 --
