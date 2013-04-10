@@ -9,7 +9,7 @@ class page_pins_transfer extends Page {
 		$form->addField('autocomplete/basic','depot')
 			->setOptions(array('minLength'=>3))
 			->mustMatch()
-			->setNotNull()
+			->validateNotNull()
 			->setModel('Depot');
 
 		$form->addSubmit('TRansfer Pins');

@@ -10,7 +10,7 @@ class page_pins_distributorsales extends Page {
 		$form->addField('autocomplete/basic','distributor')
 			->setOptions(array('minLength'=>3))
 			->mustMatch()
-			->setNotNull()
+			->validateNotNull()
 			->setModel('Distributor');
 
 		$form->addSubmit('Sale Pins');

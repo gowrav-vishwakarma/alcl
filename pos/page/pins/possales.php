@@ -10,7 +10,7 @@ class page_pins_possales extends Page {
 		$form->addField('autocomplete/basic','pos')
 			->setOptions(array('minLength'=>3))
 			->mustMatch()
-			->setNotNull()
+			->validateNotNull()
 			->setModel('Pos');
 
 		$form->addSubmit('Sale Pins');
