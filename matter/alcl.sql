@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 3.4.10.1deb1
+-- version 3.4.5deb1
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generation Time: Apr 10, 2013 at 12:05 AM
--- Server version: 5.5.28
--- PHP Version: 5.3.10-1ubuntu3.5
+-- Generation Time: Apr 10, 2013 at 01:23 PM
+-- Server version: 5.1.61
+-- PHP Version: 5.3.6-13ubuntu3.10
 
 SET SQL_MODE="NO_AUTO_VALUE_ON_ZERO";
 SET time_zone = "+00:00";
@@ -19,7 +19,6 @@ SET time_zone = "+00:00";
 --
 -- Database: `alcl`
 --
-
 -- --------------------------------------------------------
 
 --
@@ -220,15 +219,15 @@ CREATE TABLE IF NOT EXISTS `jos_xkitmaster` (
   `DefaultColor` char(10) NOT NULL DEFAULT 'blue',
   `published` tinyint(1) NOT NULL DEFAULT '1',
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=36 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=37 ;
 
 --
 -- Dumping data for table `jos_xkitmaster`
 --
 
 INSERT INTO `jos_xkitmaster` (`id`, `Name`, `MRP`, `DP`, `BV`, `PV`, `RP`, `AmountToIntroducer`, `Capping`, `DefaultGreen`, `DefaultColor`, `published`) VALUES
-(1, 'kit 1', 100, 80, 50, 20, 0, 10, 2000, 1, 'blue', 1),
-(35, 'kit2', 140, 120, 100, 80, 60, 0, 4000, 1, 'blue', 1);
+(1, 'Foce Watch', 3100, 3100, 0, 500, 0, 100, 75000, 1, 'blue', 1),
+(36, 'Bio Magnatic Bracelet', 3100, 3100, 0, 500, 0, 100, 75000, 0, 'blue', 1);
 
 -- --------------------------------------------------------
 
@@ -262,14 +261,7 @@ CREATE TABLE IF NOT EXISTS `jos_xlegs` (
   `ClosingCount` bigint(20) NOT NULL DEFAULT '0',
   `TotalCount` bigint(20) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=2 ;
-
---
--- Dumping data for table `jos_xlegs`
---
-
-INSERT INTO `jos_xlegs` (`id`, `distributor_id`, `Leg`, `downline_id`, `SessionPV`, `MidSessionPV`, `ClosingPV`, `SessionBV`, `MidSessionBV`, `ClosingBV`, `SessionRP`, `MidSessionRP`, `ClosingRP`, `SessionIntros`, `MidSessionIntros`, `ClosingIntros`, `SessionGreenCount`, `MidSessionGreenCount`, `ClosingGreenCount`, `TotalGreenCount`, `SessionCount`, `MidSessionCount`, `ClosingCount`, `TotalCount`) VALUES
-(1, 1, 'A', 111561, 20, 20, 20, 50, 50, 50, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1);
+) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
 
 -- --------------------------------------------------------
 
@@ -308,15 +300,14 @@ CREATE TABLE IF NOT EXISTS `jos_xpersonaldetails` (
   `Product` varchar(50) DEFAULT NULL,
   `PinManagerPassword` varchar(50) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=4423 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=4422 ;
 
 --
 -- Dumping data for table `jos_xpersonaldetails`
 --
 
 INSERT INTO `jos_xpersonaldetails` (`id`, `distributor_id`, `Name`, `Father_HusbandName`, `Gender`, `Dob`, `Address`, `City`, `Via`, `Country`, `Tahsil`, `District`, `State`, `PinCode`, `EmailID`, `OfficeNo`, `ResidanceNo`, `MobileNo`, `Nominee`, `RelainWithNominee`, `NomineeDob`, `Password`, `PanNo`, `Occupation`, `Bank`, `IFSC`, `AccountNumber`, `Product`, `PinManagerPassword`) VALUES
-(4421, 1, 'root distributor', NULL, NULL, NULL, NULL, NULL, '', '', '', NULL, NULL, '-', NULL, NULL, '', '0', NULL, NULL, NULL, 'root', NULL, '-', NULL, NULL, NULL, NULL, 'root'),
-(4422, 111561, 'new enrty 1', 'a', NULL, '2013-04-06', '1', '1', '', '', '', NULL, '1', '-', NULL, NULL, '', '1', '1', '1', NULL, '1', '1', '-', '1', '1', '1', NULL, NULL);
+(4421, 1, 'root distributor', NULL, NULL, NULL, NULL, NULL, '', '', '', NULL, NULL, '-', NULL, NULL, '', '0', NULL, NULL, NULL, 'root', NULL, '-', NULL, NULL, NULL, NULL, 'root');
 
 -- --------------------------------------------------------
 
@@ -340,19 +331,14 @@ CREATE TABLE IF NOT EXISTS `jos_xpinmaster` (
   `under_pos` tinyint(1) DEFAULT '1',
   PRIMARY KEY (`id`),
   UNIQUE KEY `Pin` (`Pin`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 COLLATE=latin1_general_ci AUTO_INCREMENT=111566 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 COLLATE=latin1_general_ci AUTO_INCREMENT=2 ;
 
 --
 -- Dumping data for table `jos_xpinmaster`
 --
 
 INSERT INTO `jos_xpinmaster` (`id`, `Pin`, `kit_id`, `BV`, `PV`, `RP`, `Used`, `adcrd_id`, `published`, `created_at`, `updated_at`, `pos_id`, `under_pos`) VALUES
-(1, 'root_pin', 1, 80, 20, 0, 1, 1, 1, '2013-04-01 00:00:00', '2013-04-01 00:00:00', 1, 0),
-(111561, '2830-1732-2096-5356', 1, 50, 20, 0, 1, 111561, 1, '2013-04-06 16:00:42', '2013-04-06 18:27:25', 1, 0),
-(111562, '7410-9154-4206-1651', 1, 50, 20, 0, 0, 1, 0, '2013-04-06 16:00:42', '2013-04-06 16:00:43', 1, 1),
-(111563, '3517-7892-4864-8201', 1, 50, 20, 0, 0, 1, 0, '2013-04-06 16:00:42', '2013-04-06 16:00:43', 1, 1),
-(111564, '4987-7185-7473-2809', 1, 50, 20, 0, 0, 1, 0, '2013-04-06 16:00:42', '2013-04-06 16:00:43', 1, 1),
-(111565, '3978-9509-3234-2871', 1, 50, 20, 0, 0, 1, 0, '2013-04-06 16:00:42', '2013-04-06 16:00:43', 1, 1);
+(1, 'root_pin', 1, 80, 20, 0, 1, 1, 1, '2013-04-01 00:00:00', '2013-04-01 00:00:00', 1, 0);
 
 -- --------------------------------------------------------
 
@@ -580,15 +566,14 @@ CREATE TABLE IF NOT EXISTS `jos_xtreedetails` (
   `temp1` bigint(20) DEFAULT '0',
   PRIMARY KEY (`id`),
   KEY `Path` (`Path`(255))
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=111562 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=2 ;
 
 --
 -- Dumping data for table `jos_xtreedetails`
 --
 
 INSERT INTO `jos_xtreedetails` (`id`, `sponsor_id`, `introducer_id`, `pin_id`, `kit_id`, `adcrd_id`, `PV`, `BV`, `RP`, `SessionPairPV`, `MidSessionPairPV`, `ClosingPairPV`, `TotalPairPV`, `SessionPairBV`, `MidSessionBV`, `ClosingBV`, `TotalBV`, `SessionPairRP`, `MidSessionPairRP`, `ClosingPairRP`, `TotalPairRP`, `SessionIntros`, `SessionIntroductionAmount`, `MidSessionIntros`, `ClosingIntros`, `TotalIntroduces`, `TotalIntroductionAmount`, `SessionGreenCount`, `MidSessionGreenCount`, `ClosingGreenCount`, `TotalGreenCount`, `SessionCount`, `MidSessionCount`, `ClosingCount`, `TotalCount`, `LastClosingCarryAmount`, `IntroductionIncome`, `BinaryIncomeFromIntrosShare`, `RMB`, `LevelIncome1`, `LevelIncome2`, `LevelIncome3`, `LevelIncome4`, `LevelIncome5`, `LevelIncome6`, `LevelIncome7`, `LevelIncome8`, `LevelIncome9`, `LevelIncome10`, `RoyaltyIncome`, `SurveyIncome`, `ClosingAmount`, `TotalClosingAmount`, `ClosingTDSAmount`, `TotalTDSAmount`, `ClosingServiceCharge`, `OtherDeductions`, `ClosingUpgradationDeduction`, `TotalUpgradationDeduction`, `OtherDeductionRemarks`, `FirstPayoutDeduction`, `ClosingAmountNet`, `ClosingCarriedAmount`, `Path`, `GreenDate`, `Counted`, `SessionNewJoining`, `MidSessionNewJoining`, `ClosingNewJoining`, `JoiningDate`, `jid`, `published`, `temp1`) VALUES
-(1, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0.00, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, NULL, 0, 0, 0, '0', '0000-00-00', 0, 0, 0, 0, '2013-04-01', NULL, 1, 0),
-(111561, 1, 0, 111561, 1, 1, 20, 50, 0, 0, 0, 0, 0, 0, 0, 0.00, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, NULL, 0, 0, 0, '0A', '0000-00-00', 0, 0, 0, 0, '2013-04-06', NULL, 1, 0);
+(1, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0.00, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, NULL, 0, 0, 0, '0', '0000-00-00', 0, 0, 0, 0, '2013-04-01', NULL, 1, 0);
 
 -- --------------------------------------------------------
 
@@ -612,7 +597,19 @@ CREATE TABLE IF NOT EXISTS `jos_xxcategory` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `name` varchar(200) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1 ROW_FORMAT=COMPACT AUTO_INCREMENT=1 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 ROW_FORMAT=COMPACT AUTO_INCREMENT=7 ;
+
+--
+-- Dumping data for table `jos_xxcategory`
+--
+
+INSERT INTO `jos_xxcategory` (`id`, `name`) VALUES
+(1, 'Health Care'),
+(2, 'Electronics'),
+(3, 'Insurance'),
+(4, 'FMCG'),
+(5, 'House Hold'),
+(6, 'Garments');
 
 -- --------------------------------------------------------
 
@@ -722,7 +719,15 @@ CREATE TABLE IF NOT EXISTS `jos_xxitems` (
   `BV` int(11) DEFAULT NULL,
   PRIMARY KEY (`id`),
   KEY `fk_jos_xxitems_jos_xxcategory1` (`category_id`) USING BTREE
-) ENGINE=InnoDB DEFAULT CHARSET=latin1 ROW_FORMAT=COMPACT AUTO_INCREMENT=1 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 ROW_FORMAT=COMPACT AUTO_INCREMENT=3 ;
+
+--
+-- Dumping data for table `jos_xxitems`
+--
+
+INSERT INTO `jos_xxitems` (`id`, `name`, `category_id`, `LastPurchasePrice`, `DP`, `MRP`, `DealerPrice`, `RetailerPrice`, `Unit`, `BV`) VALUES
+(1, 'Foce Watch', 2, NULL, 0, 0, 0, 0, 'Pcs', 0),
+(2, 'Bio Magnatic Bracelet', 1, NULL, 0, 0, 0, 0, 'Pcs', 0);
 
 -- --------------------------------------------------------
 
@@ -736,7 +741,15 @@ CREATE TABLE IF NOT EXISTS `jos_xxkititems` (
   `item_id` int(11) DEFAULT NULL,
   `Qty` int(11) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=3 ;
+
+--
+-- Dumping data for table `jos_xxkititems`
+--
+
+INSERT INTO `jos_xxkititems` (`id`, `kit_id`, `item_id`, `Qty`) VALUES
+(1, 1, 1, 1),
+(2, 36, 2, 1);
 
 -- --------------------------------------------------------
 
@@ -750,7 +763,15 @@ CREATE TABLE IF NOT EXISTS `jos_xxkitledgers` (
   `ledger_id` int(11) DEFAULT NULL,
   `Amount` float(11,2) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1 ROW_FORMAT=COMPACT AUTO_INCREMENT=1 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 ROW_FORMAT=COMPACT AUTO_INCREMENT=3 ;
+
+--
+-- Dumping data for table `jos_xxkitledgers`
+--
+
+INSERT INTO `jos_xxkitledgers` (`id`, `kit_id`, `ledger_id`, `Amount`) VALUES
+(1, 1, 16, 3100.00),
+(2, 36, 17, 3100.00);
 
 -- --------------------------------------------------------
 
@@ -809,23 +830,23 @@ CREATE TABLE IF NOT EXISTS `jos_xxledgers` (
 --
 
 INSERT INTO `jos_xxledgers` (`id`, `name`, `created_at`, `updated_at`, `distributor_id`, `group_id`, `pos_id`, `staff_id`, `default_account`, `items_id`, `ledger_type`) VALUES
-(1, 'pos_COMPANY POS', '2013-04-06 00:00:00', '2013-04-06 00:00:00', 1, 12, NULL, NULL, 1, NULL, NULL),
-(2, 'Cash', '2013-04-06 00:00:00', '2013-04-06 00:00:00', NULL, 28, NULL, NULL, 1, NULL, NULL),
-(3, 'Discount Allowed', '2013-04-06 00:00:00', '2013-04-06 00:00:00', NULL, 21, NULL, NULL, 1, NULL, NULL),
-(4, 'Discount Received', '2013-04-06 00:00:00', '2013-04-06 00:00:00', NULL, 23, NULL, NULL, 1, NULL, NULL),
-(5, 'Purchase Account', '2013-04-06 00:00:00', '2013-04-06 00:00:00', NULL, 24, NULL, NULL, 1, NULL, NULL),
-(6, 'Sales Account', '2013-04-06 00:00:00', '2013-04-06 00:00:00', NULL, 25, NULL, NULL, 1, NULL, NULL),
-(7, 'TDS', '2013-04-06 00:00:00', '2013-04-06 00:00:00', NULL, 9, NULL, NULL, 1, NULL, NULL),
-(8, 'Commission', '2013-04-06 00:00:00', '2013-04-06 00:00:00', NULL, 20, NULL, NULL, 1, NULL, NULL),
-(9, 'Service Tax Payable', '2013-04-06 00:00:00', '2013-04-06 00:00:00', NULL, 9, NULL, NULL, 1, NULL, NULL),
-(10, 'XYZ Bank Account', '2013-04-06 00:00:00', '2013-04-06 00:00:00', NULL, 19, NULL, NULL, 1, NULL, NULL),
-(11, 'Service Charge', '2013-04-06 00:00:00', '2013-04-06 00:00:00', NULL, 23, NULL, NULL, 1, NULL, NULL),
-(12, 'Other Deductions', '2013-04-06 00:00:00', '2013-04-06 00:00:00', NULL, 23, NULL, NULL, 1, NULL, NULL),
-(13, 'First Payout Deduction', '2013-04-06 00:00:00', '2013-04-06 00:00:00', NULL, 27, NULL, NULL, 1, NULL, NULL),
-(14, 'Upgradation Deduction', '2013-04-06 00:00:00', '2013-04-06 00:00:00', NULL, 27, NULL, NULL, 1, NULL, NULL),
-(15, '1 root distributor', '2013-04-06 14:58:40', '2013-04-06 14:58:40', 1, 26, NULL, NULL, 1, NULL, NULL),
-(16, 'pos_udr', '2013-04-06 00:00:00', '2013-04-06 00:00:00', 1, 12, NULL, NULL, 1, NULL, NULL),
-(17, '111561 - new enrty 1', '2013-04-06 00:00:00', '2013-04-06 00:00:00', 111561, 12, NULL, NULL, 1, NULL, NULL);
+(1, 'pos_COMPANY POS', '2013-04-09 00:00:00', '2013-04-09 00:00:00', 1, 12, NULL, NULL, 1, NULL, NULL),
+(2, 'Cash', '2013-04-09 00:00:00', '2013-04-09 00:00:00', NULL, 28, NULL, NULL, 1, NULL, NULL),
+(3, 'Discount Allowed', '2013-04-09 00:00:00', '2013-04-09 00:00:00', NULL, 21, NULL, NULL, 1, NULL, NULL),
+(4, 'Discount Received', '2013-04-09 00:00:00', '2013-04-09 00:00:00', NULL, 23, NULL, NULL, 1, NULL, NULL),
+(5, 'Purchase Account', '2013-04-09 00:00:00', '2013-04-09 00:00:00', NULL, 24, NULL, NULL, 1, NULL, NULL),
+(6, 'Sales Account', '2013-04-09 00:00:00', '2013-04-09 00:00:00', NULL, 25, NULL, NULL, 1, NULL, NULL),
+(7, 'TDS', '2013-04-09 00:00:00', '2013-04-09 00:00:00', NULL, 9, NULL, NULL, 1, NULL, NULL),
+(8, 'Commission', '2013-04-09 00:00:00', '2013-04-09 00:00:00', NULL, 20, NULL, NULL, 1, NULL, NULL),
+(9, 'Service Tax Payable', '2013-04-09 00:00:00', '2013-04-09 00:00:00', NULL, 9, NULL, NULL, 1, NULL, NULL),
+(10, 'XYZ Bank Account', '2013-04-09 00:00:00', '2013-04-09 00:00:00', NULL, 19, NULL, NULL, 1, NULL, NULL),
+(11, 'Service Charge', '2013-04-09 00:00:00', '2013-04-09 00:00:00', NULL, 23, NULL, NULL, 1, NULL, NULL),
+(12, 'Other Deductions', '2013-04-09 00:00:00', '2013-04-09 00:00:00', NULL, 23, NULL, NULL, 1, NULL, NULL),
+(13, 'First Payout Deduction', '2013-04-09 00:00:00', '2013-04-09 00:00:00', NULL, 27, NULL, NULL, 1, NULL, NULL),
+(14, 'Upgradation Deduction', '2013-04-09 00:00:00', '2013-04-09 00:00:00', NULL, 27, NULL, NULL, 1, NULL, NULL),
+(15, '1 root distributor', '2013-04-09 16:24:32', '2013-04-09 16:24:32', 1, 26, NULL, NULL, 1, NULL, NULL),
+(16, 'Foce Watch Sales Ledger', '2013-04-09 00:00:00', '2013-04-09 00:00:00', NULL, 25, NULL, NULL, 1, NULL, NULL),
+(17, 'Bio Magnatic Sales Ledger', '2013-04-09 00:00:00', '2013-04-09 00:00:00', NULL, 25, NULL, NULL, 1, NULL, NULL);
 
 -- --------------------------------------------------------
 
@@ -840,15 +861,14 @@ CREATE TABLE IF NOT EXISTS `jos_xxpos` (
   `type` varchar(200) DEFAULT NULL,
   `ledger_id` int(11) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 ROW_FORMAT=COMPACT AUTO_INCREMENT=3 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 ROW_FORMAT=COMPACT AUTO_INCREMENT=2 ;
 
 --
 -- Dumping data for table `jos_xxpos`
 --
 
 INSERT INTO `jos_xxpos` (`id`, `name`, `owner_id`, `type`, `ledger_id`) VALUES
-(1, 'COMPANY POS', 1, 'Company', 1),
-(2, 'udr1', 1, 'Retailer', 16);
+(1, 'COMPANY POS', 1, 'Company', 1);
 
 -- --------------------------------------------------------
 
@@ -879,7 +899,7 @@ CREATE TABLE IF NOT EXISTS `jos_xxstaff` (
   `AccessLevel` varchar(200) DEFAULT NULL,
   PRIMARY KEY (`id`),
   KEY `fk_jos_xxstaff_jos_xxpos` (`pos_id`) USING BTREE
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 ROW_FORMAT=COMPACT AUTO_INCREMENT=4 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 ROW_FORMAT=COMPACT AUTO_INCREMENT=3 ;
 
 --
 -- Dumping data for table `jos_xxstaff`
@@ -887,8 +907,7 @@ CREATE TABLE IF NOT EXISTS `jos_xxstaff` (
 
 INSERT INTO `jos_xxstaff` (`id`, `name`, `username`, `password`, `pos_id`, `AccessLevel`) VALUES
 (1, 'COMPANY POS_SUPER_STAFF', 'pos_1_admin', 'admin', 1, '1000'),
-(2, 'alcladmin', 'alcladmin', 'alcladmin', 0, '1000'),
-(3, 'udr_SUPER_STAFF', 'pos_2_admin', 'admin', 2, '100');
+(2, 'alcladmin', 'alcladmin', 'alcladmin', 0, '1000');
 
 -- --------------------------------------------------------
 
@@ -944,7 +963,19 @@ CREATE TABLE IF NOT EXISTS `jos_xxvouchers` (
   PRIMARY KEY (`id`),
   KEY `VoucherNo` (`VoucherNo`),
   KEY `VoucherType` (`VoucherType`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1 ROW_FORMAT=COMPACT AUTO_INCREMENT=1 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 ROW_FORMAT=COMPACT AUTO_INCREMENT=8 ;
+
+--
+-- Dumping data for table `jos_xxvouchers`
+--
+
+INSERT INTO `jos_xxvouchers` (`id`, `ledger_id`, `pos_id`, `AmountCR`, `AmountDR`, `VoucherNo`, `Narration`, `VoucherType`, `RefAccount`, `has_details`, `created_at`, `entry_side`, `entry_count_in_side`) VALUES
+(1, 1, 1, 0.00, 100.00, 1, 'Joining of 1', 'SALES', 1, 0, '2013-04-01 00:00:00', 'DR', 1),
+(2, 15, 1, 0.00, 100.00, 2, 'Joining of 1', 'SALES', 15, 0, '2013-04-01 00:00:00', 'DR', 1),
+(4, 1, 1, 100.00, 0.00, 1, 'Received on 2013-04-01', 'RECEIPT', 1, 0, '2013-04-01 00:00:00', 'CR', 1),
+(5, 22, 1, 0.00, 100.00, 1, 'Received on 2013-04-01', 'RECEIPT', 1, 0, '2013-04-01 00:00:00', 'DR', 1),
+(6, 15, 1, 100.00, 0.00, 2, 'Received on 2013-04-01', 'RECEIPT', 15, 0, '2013-04-01 00:00:00', 'CR', 1),
+(7, 22, 1, 0.00, 100.00, 2, 'Received on 2013-04-01', 'RECEIPT', 15, 0, '2013-04-01 00:00:00', 'DR', 1);
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
