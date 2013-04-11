@@ -5,8 +5,8 @@ class page_reports_accounts_pandlform extends page_reports {
 		$form=$this->add('Form');
 		$form->addClass('stacked atk-row');
 		$form->template->trySet('fieldset','span12');
-		$form->addField('DatePicker','from_date')->set('1970-01-01')->setNotNull()->template->trySet('row_class','span6');
-		$form->addField('DatePicker','to_date')->set($this->api->recall('setdate',date('Y-m-d')))->setNotNull()->template->trySet('row_class','span6');
+		$form->addField('DatePicker','from_date')->set('1970-01-01')->validateNotNull()->template->trySet('row_class','span6');
+		$form->addField('DatePicker','to_date')->set($this->api->recall('setdate',date('Y-m-d')))->validateNotNull()->template->trySet('row_class','span6');
 		$form->addSubmit('Get P and L');
 
 		if($form->isSubmitted()){
