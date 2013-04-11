@@ -11,7 +11,7 @@ class Model_Item extends Model_Table {
 
     function init() {
         parent::init();
-        $this->hasOne("Category","category_id");
+        $this->hasOne("Category","category_id")->display(array('form'=>'autocomplete/plus'));
         $this->hasMany("Stock","item_id");
         $this->hasMany("VoucherDetails","item_id");
         $this->hasMany("MyVoucherDetails","item_id");

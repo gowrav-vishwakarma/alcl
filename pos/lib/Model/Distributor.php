@@ -80,7 +80,6 @@ class Model_Distributor extends Model_Table {
     }
 
     function beforeSave(){
-
         if(!$this->loaded()){
             $this->recall('new_entry',false);
             $sponsor=$this->add('Model_Distributor');

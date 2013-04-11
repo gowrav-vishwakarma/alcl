@@ -26,7 +26,7 @@ class page_admin_actemp extends page_admin {
         $lc->setModel('DefaultLedgers');
         
         if($lc->grid){
-            $lc->grid->addPaginator(10);
+            $lc->grid->addPaginator(100);
             $lc->grid->addQuickSearch(array('name'));
         }
         

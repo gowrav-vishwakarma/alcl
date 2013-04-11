@@ -34,6 +34,8 @@ class Frontend extends ApiFrontend {
         // If you wish to restrict actess to your pages, use BasicAuth class
         $auth=$this->add('Auth');
         $auth->setModel('Distributor','id','Password');
+        $auth->allowPage(array('freeregistration'));
+
             // ->allow('demo','demo')
             // use check() and allowPage for white-list based auth checking
             $this->auth->check();
@@ -47,7 +49,8 @@ class Frontend extends ApiFrontend {
 
         // If you are using a complex menu, you can re-define
         // it and place in a separate class
-        $this->add('Menu',null,'Menu')
+        if($this->api->auth->isLoggedIn()){
+            $this->add('Menu',null,'Menu')
             ->addMenuItem('index','Welcome')
             ->addMenuItem('sessionview','Week Sessions')
             ->addMenuItem('statements','Closings')
@@ -59,6 +62,10 @@ class Frontend extends ApiFrontend {
             ->addMenuItem('newregistration','New Registration')
             ->addMenuItem('logout')
             ;
+        }else{
+            $this->template->tryDel('Menu');
+            $this->template->trySet('header_text',"FREE REGISTRATION PAGE");
+        }
         // $menu = $this->add('View_DropButton')->usemenu();
         // $flyout=$menu->add('View_Flyout');
         // $submenu=$flyout->add('Menu_jUI');
@@ -68,7 +75,7 @@ class Frontend extends ApiFrontend {
         // $submenu->addMenuItem('item1');
         // $submenu->addMenuItem('item2');
 
-        $this->addLayout('UserMenu');
+        // $this->addLayout('UserMenu');
         $this->add('H1',null,'logo')->set('Welcome ' . $this->auth->model['name']);
     }
     function layout_UserMenu(){
