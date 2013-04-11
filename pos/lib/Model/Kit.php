@@ -83,7 +83,8 @@ class Model_Kit extends Model_Table {
             $sv->addVoucher($dr_array,$cr_array,$voucher_no,false,$to_ledger,$narration,$on_date);
         }
 
-        $kittransfer=$this->add('Model_MyKitTransfers');
+        // throw $this->exception("Hi there");
+        $kittransfer=$this->add('Model_KitTransfers');
         $kittransfer['kit_id']=$this->id;
         $kittransfer['from_ledger_id']=$from_ledger;
         $kittransfer['to_ledger_id']=$to_ledger;

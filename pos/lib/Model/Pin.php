@@ -214,9 +214,11 @@ class Model_Pin extends Model_Table {
 
     }
 
-    function saleFromDistToDist($from_dist=null,$to_dist,$noofpins=1,$narration,$on_date){
+    function saleFromDistToDist($from_dist=null,$to_dist,$noofpins=1,$narration,$on_date=null){
         
         if($from_dist == null) $from_dist = $this['adcrd_id'];
+
+        if($on_date == null) $on_date = date('Y-m-d');
 
         $pin=$this->add('Model_Pin');
         $pin->addCondition('kit_id',$this->ref('kit_id')->id);
