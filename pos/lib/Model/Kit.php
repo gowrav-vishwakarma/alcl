@@ -92,8 +92,8 @@ class Model_Kit extends Model_Table {
         $kittransfer['is_completed']=false;
         $kittransfer['Transfered']=0;
         $kittransfer->save();
-        // throw $this->exception("Hi there");
 
+        // throw $this->exception("Hi there");
     }
 
 
