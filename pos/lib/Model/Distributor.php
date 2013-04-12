@@ -81,7 +81,8 @@ class Model_Distributor extends Model_Table {
 
     function beforeSave(){
         if(!$this->loaded()){
-            $this->recall('new_entry',false);
+            // throw $this->exception($this->id);
+            // $this->recall('new_entry',false);
             $sponsor=$this->add('Model_Distributor');
             $sponsor->load($this['sponsor_id']);
 
@@ -154,7 +155,7 @@ class Model_Distributor extends Model_Table {
         $RP = ($RP == null ) ? $kit['RP'] : $RP;
         $IntroAmount = $kit['AmountToIntroducer'];
         $Green = $kit['DefaultGreen'];
-
+        // throw $this->exception("Kit is $Green");
 
         $query = "
                 UPDATE jos_xlegs l

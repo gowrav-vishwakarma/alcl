@@ -23,9 +23,9 @@ class page_admin_pin_generate extends page_admin{
 			}
 
 			$pintransaction=$this->add('Model_PinTransaction');
-			$pintransaction['FromDistributor_id']=1;
-			$pintransaction['ToDistributor_id']=1;
-			$pintransaction['Narration']='Pin Ganrated';
+			$pintransaction['Fromdistributor_id']=1;
+			$pintransaction['Todistributor_id']=1;
+			$pintransaction['Narration']= $form->get('no_of_pins') . ' Pin(s) Ganrated for ' . $k['name'];
 			$pintransaction['Transaction_Type']='PinGeneration';
 			$pintransaction->save();
 

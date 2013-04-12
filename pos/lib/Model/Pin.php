@@ -24,7 +24,7 @@ class Model_Pin extends Model_Table {
         $this->addField('created_at')->type('date')->defaultValue(date('Y-m-d H:i:s'))->system(true);
         $this->addField('updated_at')->type('date')->defaultValue(date('Y-m-d H:i:s'))->system(true);
 
-        $this->addField('under_pos')->type('boolean')->defaultValue(true);
+        $this->addField('under_pos')->type('boolean')->defaultValue(true); //Last pos id where pin was
 
         $this->addExpression('distributor_id')->set('id');
 
@@ -85,6 +85,7 @@ class Model_Pin extends Model_Table {
         $pin->addCondition('kit_id',$kit);
         $pin->addCondition('Used',false);
         $pin->addCondition('pos_id',$from_pos);
+        $pin->addCondition('under_pos',true);
         if($pin->count()->do_getOne() < $noofpins)
             throw $this->exception("There are not sufficient unused pins to transfer");
 
@@ -95,7 +96,7 @@ class Model_Pin extends Model_Table {
 
         $q="UPDATE jos_xpinmaster SET pos_id=$to_pos 
             WHERE 
-                kit_id= $kit and Used= 0 AND pos_id = $from_pos
+                kit_id= $kit and Used= 0 AND pos_id = $from_pos AND under_pos = 1
             LIMIT $noofpins
                 ";
         $this->api->db->dsql()->expr($q)->execute();
@@ -134,8 +135,8 @@ class Model_Pin extends Model_Table {
 
         $i=1;
         foreach($pin as $junk){
-            $pin['adcrd_id']=$to_dist;
-            $pin['under_pos']=1;
+            // $pin['adcrd_id']=$to_dist;
+            // $pin['under_pos']=1;
             $pin['adcrd_id']=$pos['owner_id'];
             $pin['pos_id']=$to_pos;
             $pin->saveAndUnload();
@@ -196,7 +197,7 @@ class Model_Pin extends Model_Table {
     }
 
     function singleSaleToDIST($to_dist,$narration=null){
-        $this['adcrd_id'] = $to_dist;
+        $this['adcrd_id'] = $to_dist; //WHERE IS THE PIN RIGHT NOW
         $this['under_pos']=0;
         $this->save();
 
@@ -204,11 +205,12 @@ class Model_Pin extends Model_Table {
         
 
         $dist_ledger=$this->add('Model_LedgerAll');
-        $dist_ledger->addCondition('distributor_id',$to_dist);
-        $dist_ledger->addCondition('pos_id','is', null);
-        $dist_ledger->addCondition('default_account',true);
-        // $dist_ledger->debug();
-        $dist_ledger->loadAny();
+        $dist_ledger->getDistributorLedger($to_dist);
+        // $dist_ledger->addCondition('distributor_id',$to_dist);
+        // $dist_ledger->addCondition('pos_id','is', null);
+        // $dist_ledger->addCondition('default_account',true);
+        // // $dist_ledger->debug();
+        // $dist_ledger->loadAny();
 
         $pinkit->doSales(1,$dist_ledger->id,$this->ref('pos_id')->get('ledger_id'),$narration);
 
