@@ -33,17 +33,27 @@ class page_pins_changestatus extends Page{
 			if($m->loaded())
 				$form->js()->univ()->errorMessage("The pins have used pin in between or not owned by you, cannot change status")->execute();
 
-			$this->api->db->dsql()
+			$no_of_pins=$this->api->db->dsql()
 				->table('jos_xpinmaster')
 				->set('published',$form->get('status'))
 				->where('id','>=',$form->get('from_id'))
 				->where('id','<=',$form->get('to_id'))
 				// ->where('pos_id',$this->api->auth->model['pos_id'])
 				->update();
-				$form->js(null,array(
-						$form->js()->reload(),
-						$form->js()->univ()->successMessage("Status changed")
-					))->univ()->execute();
+			
+			$pintransaction=$this->add('Model_PinTransaction');
+			$pintransaction['From_id']=$this->api->auth->model['pos_id'];
+			$pintransaction['To_id']=$this->api->auth->model['pos_id'];
+			$pintransaction['Qty']=$no_of_pins;
+			$pintransaction['kit_id']=0;
+			$pintransaction['Narration']= $no_of_pins . ' Pin(s) Made publised = ' . $form->get('status') . " FROM ".$form->get('from_id')." TO ". $form->get('to_id');
+			$pintransaction['Transaction_Type']='PinStatusChanged';
+			$pintransaction->save();
+
+			$form->js(null,array(
+					$form->js()->reload(),
+					$form->js()->univ()->successMessage("Status changed")
+				))->univ()->execute();
 		}
 	}
 }
