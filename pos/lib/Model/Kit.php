@@ -83,16 +83,17 @@ class Model_Kit extends Model_Table {
             $sv->addVoucher($dr_array,$cr_array,$voucher_no,false,$to_ledger,$narration,$on_date);
         }
 
-        $kittransfer=$this->add('Model_MyKitTransfers');
+        $kittransfer=$this->add('Model_KitTransfers');
         $kittransfer['kit_id']=$this->id;
         $kittransfer['from_ledger_id']=$from_ledger;
         $kittransfer['to_ledger_id']=$to_ledger;
-        $kittransfer['no_of_kits']=$no_of_kit;
+        $kittransfer['Qty']=$no_of_kit;
         $kittransfer['order_date']=($on_date == null )? $this->api->recall('setdate',date('Y-m-d')) : $on_date;
         $kittransfer['is_completed']=false;
         $kittransfer['Transfered']=0;
         $kittransfer->save();
 
+        // throw $this->exception("Hi there");
     }
 
 

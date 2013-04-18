@@ -58,7 +58,9 @@ class page_newregistration extends Page {
 			if(!$pin->loaded() OR $pin['Pin'] != strtolower($form->get('pin')) OR $pin['Used']==true OR $pin['published']==false)
 				$form->displayError('pin','Pin Validation failed or This is a Used pin or Not Activated Pin');
 
-			// $this->api->auth->model['pos_id'] = $pin['pos_id'];
+			// +++ below is not just randome line .. used to get current users pos when not logged in from POS Staff and using common functions for sale...
+			// So temporarily say pin's pos is the pos from whre the transactions are happening.
+			$this->api->auth->model['pos_id'] = $pin['pos_id'];
 
 			$form->model->memorize('leg',$form->get('leg'));
 			$form->model->memorize('new_entry',true);

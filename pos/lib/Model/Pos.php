@@ -11,7 +11,7 @@ class Model_Pos extends Model_Table {
 
     function init() {
         parent::init();
-        $this->hasOne("PosOwner",'owner_id')->display(array('form'=>'autocomplete/basic'));
+        $this->hasOne("PosOwner",'owner_id')->display(array('form'=>'autocomplete/basic')); //tree wali distributor id
         $this->hasOne('LedgerAll','ledger_id')->system(true);
         
         $this->addField('name')->mandatory("Point of Sales Must have a Name");
@@ -73,8 +73,8 @@ class Model_Pos extends Model_Table {
 //        @TODO@
         $s=$this->add('Model_Staff');
         $s['name']=$this['name'] . "_SUPER_STAFF";
-        $s['username']='pos_'.$this['id']."_admin";
-        $s['password']='admin';
+        $s['username']='pos_'.$this['owner_id']."_admin";
+        $s['password']=rand(1000,9999);
         $s['AccessLevel']='100';
         $s['pos_id']=$this->id;
         $s->save();
