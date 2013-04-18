@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Arth LideCare Corporation Ltd.</title>
     <link href="http://fonts.googleapis.com/css?family=Philosopher" type="text/css"
       rel="stylesheet">
       <meta content="text/html; charset=UTF-8" http-equiv="content-type">
@@ -9,6 +8,20 @@
       <!-- <link rel="stylesheet/less" href="js/less/bootstrap.less" type="text/css"> -->
       <link rel="stylesheet/less" href="js/myless.less" type="text/css">
       <script src="js/less.min.js"></script>
+      <script src="http://code.jquery.com/jquery.min.js"></script>
+      <script type="text/javascript">
+      function setIframeHeight(iframe) {
+        if (iframe) {
+            var iframeWin = iframe.contentWindow || iframe.contentDocument.parentWindow;
+            if (iframeWin.document.body) {
+                iframe.height = iframeWin.document.documentElement.scrollHeight || iframeWin.document.body.scrollHeight;
+            }
+        }
+      };
+      $(window).load(function () {
+        setIframeHeight(document.getElementById('dist_iframe'));
+      });
+      </script>
     </head>
     <body>
       <!-- TOP NAVIGATION  -->
@@ -22,11 +35,11 @@
           </a>
           <a class="brand" href="#">ALCL</a>
             <ul class="nav">
-              <li><a href="index.html">Home</a></li>
+              <li class="active"><a href="#">Home</a></li>
               <li><a href="about.html">About Us</a></li>
               <li><a href="product.html">Products</a></li>
               <li><a href="opportunity.html">Opportunity</a></li>
-              <li class="active"><a href="#">Contact Us</a></li>
+              <li><a href="contact.html">Contact Us</a></li>
             </ul>
           </div>
         </div>
@@ -36,43 +49,12 @@
           <h1 class="container muted logo text-center rotate-on-mouse-hover2">Arth <strong>LifeCare</strong> Corporation Ltd.</h1>
           <p class="text-center"><small class="muted">-- Where life matters</small></p>
         </div>
-        <!-- REPEATED NAVIGATION ON CAROUSAL -->
-        <div class="container">
-          <div class="navbar" style="margin-bottom:0px">
-            <div class="navbar-inner mylightnavbar">
-              <ul class="nav">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About Us</a></li>
-                <li><a href="product.html">Products</a></li>
-                <li><a href="opportunity.html">Opportunity Us</a></li>
-                <li><a href="contact.html">Contact Us</a></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <!-- Carousal -->
-        <div class="container">
-          <h2>How To Reach Us</h2>
-          <div>
-            <ul class="thumbnails">
-              <li class="span4 rotate-on-mouse-hover">
-                <a class="thumbnail" href="#">
-                  <img src="img/img21.jpg" alt="">
-                </a>
-              </li>
-              <li class="span8">
-                
-                <h1>Arth LifeCare Corporation Ltd.</h1>
-                <h2>B 203 Ivory Tower</<h2>
-                <h3>Sec 5, Vasundhara </h3>
-                <h3>Gaziabad U.P.</<h3>
-              </li>
-            </ul>
-          </div>
+        <div class="container-fluid">
+        <iframe src="../users" width="100%" id="dist_iframe"></iframe>
         </div>
         
-          <!-- Dark color footer -->
-          <!-- Dark color footer -->
+            <hr/>
+            <!-- Dark color footer -->
             <div class="myfooter">
               <div class="container">
                 <div class="row-fluid">
@@ -108,5 +90,19 @@
                 <p class="pull-right">powered by <a href="http://www.xavoc.com" target="_blank">Xavoc International</a></p>
               </div>
             </div>
-        </body>
-      </html>
+
+            
+            <script src="https://raw.github.com/twitter/bootstrap/master/js/bootstrap-transition.js"></script>
+            <script src="https://raw.github.com/twitter/bootstrap/master/js/bootstrap-alert.js"></script>
+            <script src="https://raw.github.com/twitter/bootstrap/master/js/bootstrap-modal.js"></script>
+            <script src="https://raw.github.com/twitter/bootstrap/master/js/bootstrap-dropdown.js"></script>
+            <script src="https://raw.github.com/twitter/bootstrap/master/js/bootstrap-scrollspy.js"></script>
+            <script src="https://raw.github.com/twitter/bootstrap/master/js/bootstrap-tab.js"></script>
+            <script src="https://raw.github.com/twitter/bootstrap/master/js/bootstrap-tooltip.js"></script>
+            <script src="https://raw.github.com/twitter/bootstrap/master/js/bootstrap-popover.js"></script>
+            <script src="https://raw.github.com/twitter/bootstrap/master/js/bootstrap-button.js"></script>
+            <script src="https://raw.github.com/twitter/bootstrap/master/js/bootstrap-collapse.js"></script>
+            <script src="https://raw.github.com/twitter/bootstrap/master/js/bootstrap-carousel.js"></script>
+            <script src="https://raw.github.com/twitter/bootstrap/master/js/bootstrap-typeahead.js"></script>
+          </body>
+        </html>
