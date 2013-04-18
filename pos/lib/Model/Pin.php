@@ -222,15 +222,15 @@ class Model_Pin extends Model_Table {
 
         if($on_date == null) $on_date = date('Y-m-d');
 
-        $pin=$this->add('Model_Pin');
-        $pin->addCondition('kit_id',$this->ref('kit_id')->id);
-        $pin->addCondition('Used',false);
-        $pin->addCondition('adcrd_id',$from_dist);
+        // $pin=$this->add('Model_Pin');
+        // $pin->addCondition('kit_id',(int)$this->ref('kit_id')->id);
+        // $pin->addCondition('Used',false);
+        // $pin->addCondition('adcrd_id',(int)$from_dist);
         // $pin->addCondition('pos_id',$this->api->auth->model['pos_id']);
-        $pin->addCondition('under_pos',false);
+        // $pin->addCondition('under_pos',false);
 
-        if($pin->count()->do_getOne() < $noofpins)
-            throw $this->exception("There are not sufficient unused pins to transfer");
+        // if(($x=$pin->count()->debug()->getOne()) < $noofpins)
+        //     throw $this->exception("There are not sufficient unused pins to transfer" .  $x);
 
         // $pin=$this->add('Model_Pin');
         // $pin->addCondition('kit_id',$this->ref('kit_id')->id);
