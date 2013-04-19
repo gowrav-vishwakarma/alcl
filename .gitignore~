@@ -7,4 +7,5 @@ users/xavoc-addons/*
 *.orig
 *.gz
 *.zip
+*.sql
 
