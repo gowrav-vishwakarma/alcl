@@ -14,7 +14,7 @@
         if (iframe) {
             var iframeWin = iframe.contentWindow || iframe.contentDocument.parentWindow;
             if (iframeWin.document.body) {
-                iframe.height = iframeWin.document.documentElement.scrollHeight || iframeWin.document.body.scrollHeight;
+                iframe.height = (iframeWin.document.documentElement.scrollHeight || iframeWin.document.body.scrollHeight);
             }
         }
       };
@@ -35,7 +35,7 @@
           </a>
           <a class="brand" href="#">ALCL</a>
             <ul class="nav">
-              <li class="active"><a href="#">Home</a></li>
+              <li class="active"><a href="index.html">Home</a></li>
               <li><a href="about.html">About Us</a></li>
               <li><a href="product.html">Products</a></li>
               <li><a href="opportunity.html">Opportunity</a></li>
@@ -50,7 +50,7 @@
           <p class="text-center"><small class="muted">-- Where life matters</small></p>
         </div>
         <div class="container-fluid">
-        <iframe src="../users" width="100%" id="dist_iframe"></iframe>
+        <iframe src="users" width="100%" id="dist_iframe"></iframe>
         </div>
         
             <hr/>
