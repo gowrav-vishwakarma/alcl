@@ -11,8 +11,8 @@ class Model_Distributor extends Model_Table {
     function init() {
         parent::init();
 
-        $this->hasOne("Distributor", "sponsor_id")->display(array('form'=>'autocomplete/basic'));
-        $this->hasOne("Distributor", "introducer_id")->display(array('form'=>'autocomplete/basic'));
+        $this->hasOne("Distributor", "sponsor_id","username")->display(array('form'=>'autocomplete/basic'));
+        $this->hasOne("Distributor", "introducer_id" ,"username")->display(array('form'=>'autocomplete/basic'));
         $this->hasOne("Kit", "kit_id");
         $this->hasOne("Pin", "pin_id")->system(true)->display(array('form'=>'autocomplete/basic'));
 
@@ -22,6 +22,7 @@ class Model_Distributor extends Model_Table {
         
         $details=$this->join('jos_xpersonaldetails.distributor_id');
 
+        $details->addField('username')->mandatory("Username is must to give");
         $details->addField('fullname', 'Name')->mandatory("Name is must to give");
         $details->addField('Father_HusbandName')->caption('Father/Husband Name');
         $details->addField('Password')->display(array("form"=>"password")); //->system(true);
@@ -91,9 +92,9 @@ class Model_Distributor extends Model_Table {
             $leg=$this->add('Model_Leg');
             $leg['distributor_id']=$sponsor->id;
             $leg['Leg']=$this->recall('leg');
-            $leg['downline_id']=$this['id'];
+            // $leg['downline_id']=$this['id']; //Now commented as no more id is coming.. instread username is incharge
             $leg->save();
-
+            $this->memorize('leg_id',$leg->id); //Saved to put $this->id later on in leg
 
             $pin=$this->ref('pin_id');
             $pin['Used']=true;
@@ -130,6 +131,12 @@ class Model_Distributor extends Model_Table {
     function afterSave(){
         if($this->recall('new_entry',false)){
             $this->forget('new_entry');
+                $leg=$this->add('Model_Leg');
+                $leg->load($this->recall('leg_id'),0);
+                $leg['downline_id']=$this['id'];
+                $leg->save();
+                $this->forget('leg_id');
+
                 $this->createLedger();
                 $this->updateAnsesstors();
                 $this->joiningVoucherEntry();

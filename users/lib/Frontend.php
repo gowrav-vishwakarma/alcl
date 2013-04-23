@@ -33,8 +33,8 @@ class Frontend extends ApiFrontend {
 
         // If you wish to restrict actess to your pages, use BasicAuth class
         $auth=$this->add('Auth');
-        $auth->setModel('Distributor','id','Password');
-        $auth->allowPage(array('freeregistration'));
+        $auth->setModel('Distributor','username','Password');
+        $auth->allowPage(array('newregistration'));
 
             // ->allow('demo','demo')
             // use check() and allowPage for white-list based auth checking

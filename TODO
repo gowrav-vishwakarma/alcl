@@ -1,0 +1,3 @@
+ALTER TABLE `jos_xpersonaldetails` ADD `username` VARCHAR( 255 ) NOT NULL AFTER `distributor_id` 
+UPDATE jos_xpersonaldetails SET username=distributor_id
+UPDATE jos_xpinmaster SET kit_id=43, BV=0, PV=0 WHERE id=1

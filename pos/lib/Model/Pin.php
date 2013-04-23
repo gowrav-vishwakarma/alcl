@@ -156,7 +156,7 @@ class Model_Pin extends Model_Table {
 
     }
 
-    function SalesToDIST($to_dist,$noofpins,$kit){
+    function SalesToDIST($to_dist,$noofpins,$kit,$CashSale=true){
         $pin=$this->add('Model_Pin');
         $pin->addCondition('kit_id',$kit);
         $pin->addCondition('Used',false);
@@ -185,14 +185,20 @@ class Model_Pin extends Model_Table {
         $pinkit=$this->add('Model_Kit');
         $pinkit->load($kit);
 
-        $dist_ledger=$this->add('Model_LedgerAll');
-        $dist_ledger->addCondition('distributor_id',$to_dist);
-        $dist_ledger->addCondition('pos_id','is', null);
-        $dist_ledger->addCondition('default_account',true);
-        // $dist_ledger->debug();
-        $dist_ledger->loadAny();
+        if(!$CashSale){
+            $dist_ledger=$this->add('Model_LedgerAll');
+            $dist_ledger->addCondition('distributor_id',$to_dist);
+            $dist_ledger->addCondition('pos_id','is', null);
+            $dist_ledger->addCondition('default_account',true);
+            // $dist_ledger->debug();
+            $dist_ledger->loadAny();
+            $to_ledger = $dist_ledger->id;
+        }else{
+            $ledger=$this->add('Model_LedgerAll');
+            $to_ledger=$ledger->getDeafultLedgerID('Cash');
+        }
 
-        $pinkit->doSales($noofpins,$dist_ledger->id);
+        $pinkit->doSales($noofpins,$to_ledger);
 
     }
 

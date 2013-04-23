@@ -31,7 +31,8 @@ class View_Tree extends View{
 			$total_b = $leg_right['TotalGreenCount'];
 		}
 
-		$this->js(true,"addNode($id,$parent_id,'".$m['name']."', '$clr','Session details to be added here')");
+		$details = "<b>". $m['name']. "</b>";
+		$this->js(true,"addNode($id,$parent_id,'".$m['username']."', '$clr','$details')");
 		if($m['left_id'] <> null)
 			$this->drawNode($id,$m['left_id'],$depth-1);
 		else if($depth-1 > 0)

@@ -44,9 +44,9 @@ class page_pins_changestatus extends Page{
 			$pintransaction=$this->add('Model_PinTransaction');
 			$pintransaction['From_id']=$this->api->auth->model['pos_id'];
 			$pintransaction['To_id']=$this->api->auth->model['pos_id'];
-			$pintransaction['Qty']=$no_of_pins;
-			$pintransaction['kit_id']=0;
-			$pintransaction['Narration']= $no_of_pins . ' Pin(s) Made publised = ' . $form->get('status') . " FROM ".$form->get('from_id')." TO ". $form->get('to_id');
+			$pintransaction['Qty']=((int)($form->get('to_id'))) - ((int)($form->get('from_id'))) + 1;
+			$pintransaction['kit_id']=0; //can be various kit pins
+			$pintransaction['Narration']= ' Pin(s) Made publised = ' . $form->get('status') . " FROM ".$form->get('from_id')." TO ". $form->get('to_id');
 			$pintransaction['Transaction_Type']='PinStatusChanged';
 			$pintransaction->save();
 

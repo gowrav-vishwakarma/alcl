@@ -280,7 +280,7 @@ dTree.prototype.node = function(node, nodeId) {
 		node._isOnly=true;
 	//alert("Node '"+node.name+"' is: ONLY:"+node._isOnly+" - Left: "+node._isLeft+" - Right: "+node._isRight+" PARENT: "+node._p._children);
 	//alert("NODE NAME: "+node.name+" HAS CHILDREN: "+node._hc+" INDENT: "+this.indent(node, nodeId));
-	var str = '<div class="dTreeNode" style="white-space:nowrap; text-transform:capitalize">';
+	var str = '<div class="dTreeNode" style="white-space:nowrap;">';
 	
 	str += '<table border="0" cellpadding="0" cellspacing="0" width="100%" >';
 	str += '<tr>';

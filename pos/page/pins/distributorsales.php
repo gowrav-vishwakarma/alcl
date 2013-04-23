@@ -7,19 +7,21 @@ class page_pins_distributorsales extends Page {
 		$form->addField('line','no_of_pins')->validateNotNull();
 		$form->addField('dropdown','kit')->setEmptyText("Select kit")->validateNotNull("Select a kit first")->setModel('Kit');
 
+		$dm= $this->add('Model_Distributor');
+		$dm->title_field='username';
 		$form->addField('autocomplete/basic','distributor')
 			->setOptions(array('minLength'=>3))
 			->mustMatch()
 			->validateNotNull()
-			->setModel('Distributor');
-
+			->setModel($dm);
+		$form->addField('CheckBox','cash_sales');
 		$form->addSubmit('Sale Pins');
 
 		if($form->isSubmitted()){
 			$pin=$this->add('Model_Pin');
 			try{
 				$this->api->db->beginTransaction();
-				$pin->SalesToDIST($form->get('distributor'),$form->get('no_of_pins'),$form->get('kit'));
+				$pin->SalesToDIST($form->get('distributor'),$form->get('no_of_pins'),$form->get('kit'),$form->get('cash_sales'));
 				
 				$pintransaction=$this->add('Model_PinTransaction');
 				$pintransaction['From_id']=$this->api->auth->model['pos_id'];

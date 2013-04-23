@@ -34,7 +34,7 @@ class View_Distributordetails extends View {
 
 			// $this->template->trySet('total_pv_a',$leg_left['TotalPV']);
 			// $this->template->trySet('total_upgrade_a',$leg_left['TotalRP']);
-			$this->template->trySet('total_newjoinings_a',$leg_left['TotalGreenCount']);
+			$this->template->trySet('total_newjoinings_a',$leg_left['TotalCount']);
 		}
 		if($leg_right->loaded()){
 			$this->template->trySet('session_pv_b',$leg_right['SessionPV']);
@@ -47,7 +47,7 @@ class View_Distributordetails extends View {
 
 			// $this->template->trySet('total_pv_b',$leg_right['TotalPV']);
 			// $this->template->trySet('total_upgrade_b',$leg_right['TotalRP']);
-			$this->template->trySet('total_newjoinings_b',$leg_right['TotalGreenCount']);
+			$this->template->trySet('total_newjoinings_b',$leg_right['TotalCount']);
 
 		}
 
