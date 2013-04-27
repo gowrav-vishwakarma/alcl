@@ -36,6 +36,12 @@ class Model_Pin extends Model_Table {
         $this['updated_at']=date('Y-m-d H:i:s');
     }
 
+    function validatePin(){
+        if(!$this->loaded()) return false;
+        if($this['Used'] == true OR $this['published'] == false) return false;
+        return true;
+    }
+
     function generateAndSave($kit_id,$bv,$pv,$rp,$adcrd_id){
     	
     	$this['kit_id']=$kit_id;

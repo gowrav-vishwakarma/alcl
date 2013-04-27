@@ -45,7 +45,7 @@ class page_newregistration extends Page {
 		$form->add('Order')->move('leg','after','sponsor')->move('re_password','after','Password')->now();
 		$form->addField('line','username','Distributor Username')->validateField(
 		        '!eregi("[^a-z0-9_]", $this->get())'
-	        )->setFieldHint("Only Aplhabets(a-z), Numbers(0-9) and Underscore '_' allowed");
+	        )->setFieldHint("Only Aplhabets(a-z), Numbers(0-9) and Underscore '_' allowed. Username must be at least 3 character long.");
 
 		$form->addField('line','pin')->setFieldHint("Leave blank in case of Free Joining");
 		$form->addSubmit('Submit');
@@ -61,7 +61,7 @@ class page_newregistration extends Page {
 
 
 			// CHECKING FOR existing username and username length
-			if(length($form->get('username')) <=3 ) $form->displayError('username','Username must be at least 3 character long');
+			if(strlen($form->get('username')) <=3 ) $form->displayError('username','Username must be at least 3 character long');
 			$user=$this->add('Model_Distributor')->tryLoadBy('username',$form->get('username'));
 			if($user->loaded()) $form->displayError('username',"Sorry, This Username is already taken, choose differetn one");
 
@@ -81,7 +81,21 @@ class page_newregistration extends Page {
 			}else{
 				if($sponsor_leg->loaded()){
 					// Get the last node in the given leg
+					$opp_leg=($form->get('leg')=='A')? 'B':'A';
+					$sponsor_path_length=strlen($sponsor['Path'])+1;
+
+					$new_sponsor = $this->add('Model_Distributor');
+					$new_sponsor->addExpression('path_length')->set('LENGTH(Path)');
+					$new_sponsor->addExpression('tmp')->set("LOCATE('$opp_leg',Path,$sponsor_path_length)");
+
+					$new_sponsor->addCondition('Path', 'like',$sponsor['Path']. $form->get('leg').'%');
+					$new_sponsor->addCondition('tmp', 0);
 					
+					$new_sponsor->setOrder('path_length','DESC');
+					$new_sponsor->tryLoadAny();
+
+					$form->set('sponsor_id', $new_sponsor->id);
+					// $form->displayError('leg','Sponsor leg needs traversing '. $new_sponsor['name']. " ". $new_sponsor['path_length']);
 				}
 			}
 
