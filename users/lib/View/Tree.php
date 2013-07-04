@@ -11,7 +11,7 @@ class View_Tree extends View{
 
 		$m=$this->add('Model_Distributor');
 		$m->load($id);
-		$clr=($m['TotalUpgradationDeduction'] + $m['ClosingUpgradationDeduction'] >= 8000) ? "folder_green.gif" : "folder_blue.gif";
+		$clr=($m['GreenDate'] != '0000-00-00') ? "folderred.gif" : "folder_ok.gif";
 		
 		$leg_left=$this->add("Model_Leg")->addCondition('distributor_id',$m->id)->addCondition('Leg','A')->tryLoadAny();
 		$leg_right=$this->add("Model_Leg")->addCondition('distributor_id',$m->id)->addCondition('Leg','B')->tryLoadAny();

@@ -60,6 +60,7 @@ class Frontend extends ApiFrontend {
             ->addMenuItem('pinmanager','Pins/Kits Management')
             ->addMenuItem('profile','Profile')
             ->addMenuItem('newregistration','New Registration')
+            ->addMenuItem('email','Email Marketing')
             ->addMenuItem('logout')
             ;
         }else{
